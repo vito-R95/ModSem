@@ -1,0 +1,4758 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl", "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.ontologydesignpatterns.org/cp/owl/list.owl", "http://www.ontologydesignpatterns.org/cp/owl/bag.owl", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni" ],
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "190",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "206",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "219",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "221",
+    "type" : "owl:Class"
+  }, {
+    "id" : "227",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "owl:Class"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "257",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "272",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "183",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "307",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "253",
+    "type" : "owl:Class"
+  }, {
+    "id" : "252",
+    "type" : "owl:Class"
+  }, {
+    "id" : "223",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "197",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "312",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "236",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "314",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "308",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "309",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:complementOf"
+  }, {
+    "id" : "271",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "294",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "291",
+    "type" : "owl:Class"
+  }, {
+    "id" : "327",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "329",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "213",
+    "type" : "owl:Class"
+  }, {
+    "id" : "121",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "336",
+    "type" : "owl:Class"
+  }, {
+    "id" : "255",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaItaliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicistaItaliano"
+    },
+    "subClasses" : [ "20", "21" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaFrancese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaFrancese"
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaTedesco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaTedesco"
+    },
+    "id" : "25",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#padova",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "padova"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#kioene_arena",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "kioene_arena"
+      }
+    } ],
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteFrancese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteFrancese"
+    },
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Videoclip",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Videoclip",
+      "undefined" : "Videoclip"
+    },
+    "comment" : {
+      "undefined" : "Il video musicale Ë un filmato di durata variabile, non necessariamente breve,che puÚ essere scenografato,"
+    },
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Nazionalit‡Musicista",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nazionalit‡Musicista"
+    },
+    "subClasses" : [ "45", "18", "46" ],
+    "id" : "19",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Nazionalit‡Paroliere",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nazionalit‡Paroliere"
+    },
+    "subClasses" : [ "52", "53", "54" ],
+    "id" : "51",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreItaliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttoreItaliano"
+    },
+    "subClasses" : [ "62", "63" ],
+    "id" : "56",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereFrancese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParoliereFrancese"
+    },
+    "id" : "52",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Adolescenziale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adolescenziale"
+    },
+    "comment" : {
+      "undefined" : "E' l'eta che fa riferimento ad un individuo adolescente"
+    },
+    "id" : "77",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereTedesco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParoliereTedesco"
+    },
+    "id" : "54",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#musicista",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "musicista"
+    },
+    "subClasses" : [ "19" ],
+    "comment" : {
+      "undefined" : "Il musicista Ë una persona che scrive la musica compone quindi testo musicali"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#triplo_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "triplo_platino"
+    },
+    "id" : "92",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#regista",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "regista"
+    },
+    "subClasses" : [ "23" ],
+    "comment" : {
+      "undefined" : "Il regista Ë il responsabile artistico e tecnico di un videoclip"
+    },
+    "id" : "95",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#Collection",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Collection",
+      "en" : "Collection"
+    },
+    "subClasses" : [ "34" ],
+    "comment" : {
+      "undefined" : "Any container for entities that share one or more common properties. E.g. \"stone objects\", \"the nurses\", \"the Louvre Aegyptian collection\". A collection is not a logical class: a collection is a first-order entity, while a class is a second-order one."
+    },
+    "attributes" : [ "external" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreTedesco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttoreTedesco"
+    },
+    "id" : "58",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteLaziale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteLaziale"
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaPiemonte",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicistaPiemonte"
+    },
+    "id" : "21",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Brano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Music",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Brano"
+    },
+    "id" : "43",
+    "superClasses" : [ "115" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Paroliere",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Paroliere"
+    },
+    "subClasses" : [ "51" ],
+    "comment" : {
+      "undefined" : "Il paroliere Ë colui che scrive i testi di un brano"
+    },
+    "id" : "17",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Nazionalit‡Regista",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nazionalit‡Regista"
+    },
+    "subClasses" : [ "22", "25", "127" ],
+    "id" : "23",
+    "superClasses" : [ "95" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Nazionalit‡Cantante",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nazionalit‡Cantante"
+    },
+    "subClasses" : [ "31", "137", "8" ],
+    "id" : "32",
+    "superClasses" : [ "121" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#grande",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "grande"
+    },
+    "id" : "138",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteTedesco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteTedesco"
+    },
+    "id" : "137",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Temi_testo_musicale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temi_testo_musicale"
+    },
+    "subClasses" : [ "85", "82", "87" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_a_fiato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumenti_a_fiato"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#corno",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "corno"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#flauto",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "flauto"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sassofono",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "sassofono"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#clarinetto",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "clarinetto"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#trombone",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "trombone"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ottavino",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "ottavino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#flauto_traverso",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "flauto_traverso"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "sono strumenti musicali nei quali l'aria stessa Ë il mezzo primario che viene messo in vibrazione producendo suono"
+    },
+    "id" : "160",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_ad_arco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumenti_ad_arco"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Viola",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Viola"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Violoncello",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Violoncello"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Violino",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Violino"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Basso",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Basso"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Arpa",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Arpa"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Chitarra",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Chitarra"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Contrabbasso",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Contrabbasso"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "sono strumenti musicali cordofoni nei quali la vibrazione delle corde Ë sollecitata da un arco"
+    },
+    "id" : "162",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "platino"
+    },
+    "comment" : {
+      "undefined" : "Ë un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 20000 e 40000  ascolti."
+    },
+    "id" : "167",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Messina",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Messina"
+    },
+    "id" : "168",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaFrancese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicistaFrancese"
+    },
+    "id" : "46",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#radio",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "radio"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_Zeta",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Radio_Zeta"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio24",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Radio24"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_105",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Radio_105"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_deejay",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Radio_deejay"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_Italia",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Radio_Italia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Virgin",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Virgin"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Montecarlo",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Montecarlo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RTL",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "RTL"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RaiPlay_Sound",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "RaiPlay_Sound"
+      }
+    } ],
+    "id" : "75",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#verona",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "verona"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#arena_di_verona",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "arena_di_verona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#gran_padano_arena",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "gran_padano_arena"
+      }
+    } ],
+    "id" : "169",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Nazionalit‡Attore",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nazionalit‡Attore"
+    },
+    "subClasses" : [ "89", "56", "58" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#tv",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "tv"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MTV_Music",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "MTV_Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Deejay_TV",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Deejay_TV"
+      }
+    } ],
+    "id" : "50",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttorePugliese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttorePugliese"
+    },
+    "id" : "62",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaPugliese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaPugliese"
+    },
+    "id" : "157",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaEmiliano-Romagnolo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicistaEmiliano-Romagnolo"
+    },
+    "id" : "20",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#oro",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "oro"
+    },
+    "comment" : {
+      "undefined" : "Ë un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 10000 e 20000  ascolti."
+    },
+    "id" : "190",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno_album",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Guadagno_album"
+    },
+    "comment" : {
+      "undefined" : "Sono i guadagni che provengono dal lucro di un album"
+    },
+    "id" : "136",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Adulta",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Adulta"
+    },
+    "comment" : {
+      "undefined" : "E' l'eta che fa riferimento ad un individuo adulto"
+    },
+    "id" : "150",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Luogo_evento",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Luogo_evento"
+    },
+    "id" : "131"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#bari",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "bari"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#palaflorio",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "palaflorio"
+      }
+    } ],
+    "id" : "193",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreCalabrese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttoreCalabrese"
+    },
+    "id" : "63",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereToscano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParoliereToscano"
+    },
+    "id" : "142",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Emozioni",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Emozioni",
+      "undefined" : "Emozioni"
+    },
+    "subClasses" : [ "60", "65", "67", "69", "71", "73" ],
+    "comment" : {
+      "undefined" : "Le emozioni sono stati mentali e fisiologici associati a modificazioni psicologiche, a stimoli interni o esterni."
+    },
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumento_a_tastiera",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumento_a_tastiera"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pianola",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Pianola"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Fortepiano",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Fortepiano"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Organo",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Organo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Spinetta",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Spinetta"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pianoforte",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Pianoforte"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Ë un tipo di strumento musicale suonato usando una tastiera"
+    },
+    "id" : "189",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MostPopular",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MostPopular"
+    },
+    "id" : "198"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Firenze",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Firenze"
+    },
+    "id" : "179",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaVeneto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaVeneto"
+    },
+    "id" : "153",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Piattaforme_di_pubblicazione",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Piattaforme_di_pubblicazione",
+      "undefined" : "Piattaforme_di_pubblicazione"
+    },
+    "subClasses" : [ "75", "48", "50", "1" ],
+    "comment" : {
+      "undefined" : "Ë un servizio online/fisico che permette di ascoltare dei brani"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#roma",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "roma"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#palazzetto_dello_sport",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "palazzetto_dello_sport"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#stadio_olimpico",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "stadio_olimpico"
+      }
+    } ],
+    "id" : "206",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#6_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "6_platino"
+    },
+    "id" : "216",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#5_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "5_platino"
+    },
+    "id" : "219",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#8_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "8_platino"
+    },
+    "id" : "220",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#7_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "7_platino"
+    },
+    "id" : "221",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#9_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "9_platino"
+    },
+    "id" : "227",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#attore",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "attore"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "undefined" : "Un attore Ë chi rappresenta o interpreta una parte o un ruolo in un videoclip"
+    },
+    "id" : "5",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteItaliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteItaliano"
+    },
+    "subClasses" : [ "7", "10", "12" ],
+    "id" : "8",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#quadruplo_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "quadruplo_platino"
+    },
+    "id" : "124",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#diamante",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "diamante"
+    },
+    "comment" : {
+      "undefined" : "Ë un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 40000 e 250000 ascolti."
+    },
+    "id" : "239",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#rational",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "id" : "248",
+    "label" : {
+      "IRI-based" : "rational"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#rational",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "id" : "247",
+    "label" : {
+      "IRI-based" : "rational"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Artista",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Artist",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Artista",
+      "undefined" : "Artista"
+    },
+    "subClasses" : [ "14", "17", "5", "121", "95" ],
+    "comment" : {
+      "undefined" : "Con artista si indica generalmente una persona la cui attivit‡ si esprime nel campo dell'arte."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "257",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#doppio_platino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "doppio_platino"
+    },
+    "id" : "126",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#livorno",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "livorno"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#modigliani_forum",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "modigliani_forum"
+      }
+    } ],
+    "id" : "200",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#bologna",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "bologna"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#casalecchio_di_reno",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "casalecchio_di_reno"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#estragon",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "estragon"
+      }
+    } ],
+    "id" : "202",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Citt‡",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Citt‡"
+    },
+    "subClasses" : [ "234", "206", "208", "168", "26", "213", "193", "169", "197", "200", "202", "204", "179" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaLombardo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaLombardo"
+    },
+    "id" : "155",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "269",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#piccolo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "piccolo"
+    },
+    "id" : "175",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Testo_brano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Testo_brano",
+      "undefined" : "Testo_brano"
+    },
+    "comment" : {
+      "undefined" : "Ë un insieme di parole correlate fra loro per formare un'unit‡ logico-concettuale, per la produzione di un brano musicale"
+    },
+    "id" : "272"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteLombardo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteLombardo"
+    },
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_musicali",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumenti_musicali",
+      "undefined" : "strumenti_musicali"
+    },
+    "subClasses" : [ "183", "185", "160", "162", "189" ],
+    "comment" : {
+      "undefined" : "Ë un oggetto costruito o modificato con lo scopo di produrre suoni"
+    },
+    "id" : "161"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "273",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#evento",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Event",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "evento",
+      "undefined" : "evento"
+    },
+    "subClasses" : [ "138", "173", "175" ],
+    "comment" : {
+      "undefined" : "una manifestazione nell'ambito dell'organizzazione eventi"
+    },
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "276",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListItem",
+      "undefined" : "list item"
+    },
+    "subClasses" : [ "43" ],
+    "comment" : {
+      "undefined" : "ListItem - Element belonging to a list"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "280",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Crotone",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Crotone"
+    },
+    "id" : "234",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "284",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_elettronici",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumenti_elettronici"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Basso_elettrico",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Basso_elettrico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#chitarra_elettrica",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "chitarra_elettrica"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Clavicembalo_elettronico",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Clavicembalo_elettronico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Corno_elettronico",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Corno_elettronico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Batteria_elettronico",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Batteria_elettronico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Tastiera",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Tastiera"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Ë uno strumento musicale elettrofono che produce suoni per mezzo dell'elettronica analogica,"
+    },
+    "id" : "183",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Bag",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bag",
+      "undefined" : "(collections) Bag"
+    },
+    "subClasses" : [ "116" ],
+    "comment" : {
+      "undefined" : "Bag - Collection that can have a number of copies of each object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "106" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "180",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "307",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "272", "43" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "253"
+  }, {
+    "instances" : 0,
+    "union" : [ "308", "309" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "252"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "223",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#List",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List",
+      "undefined" : "list"
+    },
+    "subClasses" : [ "105" ],
+    "comment" : {
+      "undefined" : "List - An ordered array of items, that can be present in multiple copies"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno_evento",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Guadagno_evento"
+    },
+    "comment" : {
+      "undefined" : "Sono i guadagni che provengono dal lucro di un evento"
+    },
+    "id" : "113",
+    "superClasses" : [ "144" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Foggia",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Foggia"
+    },
+    "id" : "197",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#medio",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "medio"
+    },
+    "id" : "173",
+    "superClasses" : [ "112" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "312",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "29",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "236",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaItaliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegistaItaliano"
+    },
+    "subClasses" : [ "153", "155", "157" ],
+    "id" : "127",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "314",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "218",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "316",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteSiciliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CantanteSiciliano"
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#milano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "milano"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#forum_Assago",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "forum_Assago"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#alcatraz",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "alcatraz"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ippodromo_snai",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "ippodromo_snai"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#san_siro",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "san_siro"
+      }
+    } ],
+    "id" : "208",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreFrancese",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttoreFrancese"
+    },
+    "id" : "89",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "308",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "192",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#piattaforma_di_streaming",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "piattaforma_di_streaming"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Google_Play_Music",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Google_Play_Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Spotify",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Spotify"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Youtube",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Youtube"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Deezer",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Deezer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amazon_Music",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Amazon_Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Apple_Music",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Apple_Music"
+      }
+    } ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "309",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#torino",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "torino"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pala_alpitour",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "pala_alpitour"
+      }
+    } ],
+    "id" : "204",
+    "superClasses" : [ "27" ]
+  }, {
+    "instances" : 0,
+    "attributes" : [ "anonymous", "complement" ],
+    "id" : "110",
+    "complement" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "271",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#album",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "album"
+    },
+    "id" : "105",
+    "superClasses" : [ "116" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereItaliano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParoliereItaliano"
+    },
+    "subClasses" : [ "159", "142" ],
+    "id" : "53",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Guadagno",
+      "undefined" : "Guadagno"
+    },
+    "subClasses" : [ "113", "136" ],
+    "comment" : {
+      "undefined" : "Ë un lucro che si ottiene da una certa attivit‡ economica"
+    },
+    "id" : "144"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vevo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "vevo"
+    },
+    "comment" : {
+      "undefined" : "Ë un documento contenente una certificazione per vincere questa certificazione bisogna avere e 100000000 ascolti su youtube."
+    },
+    "id" : "294",
+    "superClasses" : [ "93" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Et‡",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Et‡",
+      "undefined" : "Et‡"
+    },
+    "subClasses" : [ "147", "77", "150" ],
+    "comment" : {
+      "undefined" : "E' l'eta che fa riferimento ad un individuo"
+    },
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereLaziale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParoliereLaziale"
+    },
+    "id" : "159",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Testo_musicali",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Testo_musicali",
+      "undefined" : "Testo_musicali"
+    },
+    "id" : "291"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "327",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "329",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaTedesco",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicistaTedesco"
+    },
+    "id" : "45",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumento_a_percussione",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "strumento_a_percussione"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Campanacci",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Campanacci"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Bongo",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Bongo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Djembe",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Djembe"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Maracas",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Maracas"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#batteria",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "batteria"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Tamburelli",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Tamburelli"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "sono strumenti musicali il cui suono scaturisce dal battimento, dallo sfregamento o dall'agitazione, con o senza l'ausilio di bacchette"
+    },
+    "id" : "185",
+    "superClasses" : [ "161" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Volterra",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Volterra"
+    },
+    "id" : "213",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#cantante",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "cantante"
+    },
+    "subClasses" : [ "32" ],
+    "comment" : {
+      "undefined" : "Il cantante Ë un soggetto che, mediante l'utilizzo della propria voce produce una successione di suoni"
+    },
+    "id" : "121",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pediatrica",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pediatrica"
+    },
+    "comment" : {
+      "undefined" : "E' l'eta che fa riferimento ad un individuo di et‡ pediatrica"
+    },
+    "id" : "147",
+    "superClasses" : [ "78" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Item",
+      "undefined" : "item"
+    },
+    "subClasses" : [ "115" ],
+    "comment" : {
+      "undefined" : "Item - Element belonging to a Bag"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#negozi",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "negozi"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Do_Re_Mi_Di",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Do_Re_Mi_Di"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Mediaword",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Mediaword"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Trony",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Trony"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Unieuro",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Unieuro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Euronics",
+      "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+      "labels" : {
+        "IRI-based" : "Euronics"
+      }
+    } ],
+    "id" : "48",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Genere_musicale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/MusicGenre",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Genere_musicale",
+      "undefined" : "Genere_musicale"
+    },
+    "comment" : {
+      "undefined" : "Un genere musicale Ë una categoria convenzionale che identifica e classifica i brani e le composizioni in base a criteri di affinit‡"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Certificazione",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Certificazione",
+      "undefined" : "Certificazione"
+    },
+    "subClasses" : [ "124", "126", "294", "92", "216", "219", "220", "190", "167", "221", "239", "227" ],
+    "comment" : {
+      "undefined" : "Ë un documento contenente una certificazione"
+    },
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Utente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Customer",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Utente",
+      "undefined" : "Utente"
+    },
+    "comment" : {
+      "undefined" : "Un individuo che ascolta musiche degli artisti"
+    },
+    "id" : "103"
+  }, {
+    "instances" : 0,
+    "union" : [ "103", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "336"
+  }, {
+    "instances" : 0,
+    "union" : [ "272", "43" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "255"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "237",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "238",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "240",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "241",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "242",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "243",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "244",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "245",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "246",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "249",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "250",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "251",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "254",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "258",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "259",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "260",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "261",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "262",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "263",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "264",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "265",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "266",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "267",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "268",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "270",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "274",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "275",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "277",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "278",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "279",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "281",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "286",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "226",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "288",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "289",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "290",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "292",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "297",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "298",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "299",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "300",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "303",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "305",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "306",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "310",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "311",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "313",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "315",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "229",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "317",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "318",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "319",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "322",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "328",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "330",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "331",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "332",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "333",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "334",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "335",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "337",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "338",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "339",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "345",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "352",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "15",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "29",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasItem",
+      "undefined" : "has item"
+    },
+    "superproperty" : [ "36" ],
+    "domain" : "34",
+    "subproperty" : [ "37", "38" ],
+    "comment" : {
+      "undefined" : "has item - The link to every item of the Bag"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#minutaggio",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "minutaggio"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_appartenuto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "Ë_appartenuto",
+      "undefined" : "Ë_appartenuto"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Ogni brano appartiene ad uno o pi˘ generi musicali"
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "2",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "4",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "4",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "61",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "61",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "61",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "61",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "61",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "61",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "2",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#svolto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "svolto"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vince",
+    "inverse" : "80",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "vince"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le certificazioni con i brano in cui ha vinto una certificazione"
+    },
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "83",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "83",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_videoclip",
+    "inverse" : "91",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "ha_videoclip"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani con i loro videoclip"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_diretto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "Ë_diretto",
+      "undefined" : "Ë_diretto"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i registi con i videoclip che dirigono"
+    },
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#follows",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "follows",
+      "en" : "follows",
+      "it" : "segue"
+    },
+    "domain" : "29",
+    "subproperty" : [ "97" ],
+    "comment" : {
+      "undefined" : "A relation between entities, expressing a 'sequence' schema. \nE.g. 'year 2000 follows 1999', 'preparing coffee' follows 'deciding what coffee to use', 'II World War follows I World War', etc. \nIt can be used between tasks, processes or time intervals, and subproperties would fit best in order to distinguish the different uses."
+    },
+    "attributes" : [ "transitive", "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#nome",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "nome"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#contieneTesto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "contieneTesto"
+    },
+    "superproperty" : [ "101" ],
+    "domain" : "43",
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_ascoltato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "Ë_ascoltato"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani ascoltati con gli utenti"
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#contenuto_in_album",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "contenuto_in_album",
+      "undefined" : "contenuto_in_album"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Relazione che unisce tutti i brani dell'album con il brano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scrive",
+    "inverse" : "108",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "scrive"
+    },
+    "domain" : "14",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo spartito musicale con i loro autori"
+    },
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemContent",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "itemContent",
+      "undefined" : "item content"
+    },
+    "cardinality" : "1",
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "itemContent - The link to the actual resource to which the item refers."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_ricavato_dall'evento",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "ha_ricavato_dall'evento"
+    },
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con i loro incassi"
+    },
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#lastItemOf",
+    "inverse" : "37",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "lastItemOf",
+      "undefined" : "last item of"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "115",
+    "attributes" : [ "object", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "118"
+  }, {
+    "range" : "121",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "35",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "93",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "93",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#recita",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "recita"
+    },
+    "domain" : "5",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli attori con i loro videoclip che hanno lavorato"
+    },
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#videoclip_di",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "videoclip_di"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani con i loro videoclip"
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_cantato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "Ë_cantato"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le brani con i cantanti che li cantano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#possiede",
+    "inverse" : "132",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "possiede"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Una relazione che unisce la citt‡ con il luogo di un evento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sono_suscitate",
+    "inverse" : "134",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "sono_suscitate"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo le emozioni con i brani che li suscitano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_l'incasso_di",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "Ë_l'incasso_di"
+    },
+    "domain" : "136",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli album con i loro incassi"
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#euro",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "140",
+    "label" : {
+      "IRI-based" : "euro"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "range" : "53",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "144",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "143"
+  }, {
+    "range" : "144",
+    "domain" : "136",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "78",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "78",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "78",
+    "domain" : "150",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  }, {
+    "range" : "116",
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "127",
+    "domain" : "153",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "127",
+    "domain" : "155",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "range" : "127",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "range" : "53",
+    "domain" : "159",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Numero_ascolti",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "Numero_ascolti"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#size",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "size",
+      "undefined" : "size"
+    },
+    "domain" : "106",
+    "comment" : {
+      "undefined" : "size - The number of items belonging to a collection"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_frequentato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "Ë_frequentato"
+    },
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con l'utente che li frequenta"
+    },
+    "attributes" : [ "object" ],
+    "id" : "170"
+  }, {
+    "range" : "112",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "112",
+    "domain" : "173",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "112",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "115",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "34",
+    "domain" : "116",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "27",
+    "domain" : "179",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#hasMember",
+    "inverse" : "181",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "range" : "180",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMember",
+      "en" : "has member"
+    },
+    "domain" : "106",
+    "subproperty" : [ "33" ],
+    "comment" : {
+      "undefined" : "A relation between collections and entities, e.g. 'my collection of saxophones includes an old Adolphe Sax original alto' (i.e. my collection has member an Adolphe Sax alto)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "range" : "161",
+    "domain" : "183",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "161",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "161",
+    "domain" : "160",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "161",
+    "domain" : "162",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "161",
+    "domain" : "189",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#si_svolge",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "si_svolge"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con la citt‡ in cui si svolge l'evento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Titolo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "192",
+    "label" : {
+      "IRI-based" : "Titolo"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#suscitano",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "suscitano"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo le emozioni con i brani che li suscitano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pubblicano",
+    "inverse" : "195",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "pubblicano"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le piattaforme di pubblicazione con i brani che vengono pubblicati"
+    },
+    "attributes" : [ "object" ],
+    "id" : "194"
+  }, {
+    "range" : "27",
+    "domain" : "197",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "27",
+    "domain" : "200",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "27",
+    "domain" : "202",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "27",
+    "domain" : "204",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "27",
+    "domain" : "206",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "27",
+    "domain" : "208",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "27",
+    "domain" : "168",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasFirstItem",
+    "inverse" : "211",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasFirstItem",
+      "undefined" : "has first item"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "first item - The link to the first item of the list"
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "38"
+  }, {
+    "range" : "27",
+    "domain" : "213",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "27",
+    "domain" : "193",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "27",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#testo",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "218",
+    "label" : {
+      "IRI-based" : "testo"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_et‡",
+    "inverse" : "224",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "ha_et‡"
+    },
+    "domain" : "223",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli utenti con la loro et‡"
+    },
+    "attributes" : [ "object" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#nextItem",
+    "inverse" : "226",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "nextItem",
+      "undefined" : "next item"
+    },
+    "superproperty" : [ "97" ],
+    "domain" : "115",
+    "comment" : {
+      "undefined" : "next item - The link to the next item in a list (ordered collection)"
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#guarda",
+    "inverse" : "229",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "guarda"
+    },
+    "domain" : "103",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli utenti con i videoclip che ha guardato"
+    },
+    "attributes" : [ "object" ],
+    "id" : "228"
+  }, {
+    "range" : "15",
+    "domain" : "121",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "15",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_definito",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "Ë_definito"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli strumenti musicali con il genere musicale che creano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "232"
+  }, {
+    "range" : "27",
+    "domain" : "234",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_uno_strumento_presente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "236",
+    "label" : {
+      "IRI-based" : "Ë_uno_strumento_presente"
+    },
+    "domain" : "161",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo strumento musicali con il brano in cui Ë presente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "213",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "237"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#partecipa",
+    "inverse" : "170",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "partecipa"
+    },
+    "domain" : "103",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con l'utente che li frequenta"
+    },
+    "attributes" : [ "object" ],
+    "id" : "238"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#situatoIN",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "situatoIN"
+    },
+    "domain" : "131",
+    "comment" : {
+      "undefined" : "Una relazione che unisce la citt‡ con il luogo di un evento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "240"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_vinta",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "Ë_vinta"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le certificazioni con i brano in cui ha vinto una certificazione"
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "200",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "142",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "241"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vince",
+    "inverse" : "80",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "190",
+    "label" : {
+      "IRI-based" : "vince"
+    },
+    "domain" : "198",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le certificazioni con i brano in cui ha vinto una certificazione"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "159",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "204",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#incasso",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "247",
+    "label" : {
+      "IRI-based" : "incasso"
+    },
+    "domain" : "113",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "246"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#situatoIN",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "situatoIN"
+    },
+    "domain" : "131",
+    "comment" : {
+      "undefined" : "Una relazione che unisce la citt‡ con il luogo di un evento"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "249"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_scritto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "Ë_scritto"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo spartito musicale con i loro autori"
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_incassato",
+    "inverse" : "135",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "ha_incassato"
+    },
+    "domain" : "105",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli album con i loro incassi"
+    },
+    "attributes" : [ "object" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#et‡",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "252",
+    "label" : {
+      "IRI-based" : "et‡"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "251"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sono_pubblicati",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "sono_pubblicati"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le piattaforme di pubblicazione con i brani che vengono pubblicati"
+    },
+    "attributes" : [ "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scrittoTesto",
+    "inverse" : "254",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "scrittoTesto"
+    },
+    "domain" : "253",
+    "subproperty" : [ "100" ],
+    "comment" : {
+      "undefined" : "Una relazione che unisce il testo del brano con i loro autori"
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scriveTesto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "255",
+    "label" : {
+      "IRI-based" : "scriveTesto"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Una relazione che unisce il testo del brano con i loro autori"
+    },
+    "attributes" : [ "object" ],
+    "id" : "254"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#album_contiene",
+    "inverse" : "104",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "album_contiene",
+      "undefined" : "album_contiene"
+    },
+    "domain" : "105",
+    "comment" : {
+      "undefined" : "Relazione che unisce tutti i brani dell'album con il brano"
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasLastItem",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "hasLastItem",
+      "undefined" : "has last item"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "116",
+    "comment" : {
+      "undefined" : "last item - The link to the last item of the list"
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Gioia",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "257",
+    "label" : {
+      "IRI-based" : "Gioia"
+    },
+    "domain" : "85",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "258"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#incasso_album",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "248",
+    "label" : {
+      "IRI-based" : "incasso_album"
+    },
+    "domain" : "136",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "259"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sono_suscitate",
+    "inverse" : "134",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "sono_suscitate"
+    },
+    "domain" : "61",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo le emozioni con i brani che li suscitano"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "260"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#possiede",
+    "inverse" : "132",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "possiede"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Una relazione che unisce la citt‡ con il luogo di un evento"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_definito",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "Ë_definito"
+    },
+    "domain" : "42",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli strumenti musicali con il genere musicale che creano"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "262"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_leta_di",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "Ë_leta_di"
+    },
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli utenti con la loro et‡"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "263"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ospita",
+    "inverse" : "30",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "ospita"
+    },
+    "domain" : "131",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con la citt‡ in cui si svolge l'evento"
+    },
+    "attributes" : [ "object" ],
+    "id" : "264"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "265"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "266"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "267"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sorpresa",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "269",
+    "label" : {
+      "IRI-based" : "sorpresa"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#tristezza",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "271",
+    "label" : {
+      "IRI-based" : "tristezza"
+    },
+    "domain" : "60",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "270"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ascolta",
+    "inverse" : "102",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "ascolta",
+      "undefined" : "ascolta"
+    },
+    "domain" : "103",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani ascoltati con gli utenti"
+    },
+    "attributes" : [ "object" ],
+    "id" : "274"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#paura",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "273",
+    "label" : {
+      "IRI-based" : "paura"
+    },
+    "domain" : "67",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "275"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#rabbia",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "276",
+    "label" : {
+      "IRI-based" : "rabbia"
+    },
+    "domain" : "69",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "277"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#si_svolge",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "si_svolge"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con la citt‡ in cui si svolge l'evento"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "278"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemOf",
+    "inverse" : "33",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/bag.owl",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "itemOf",
+      "undefined" : "item of"
+    },
+    "superproperty" : [ "181" ],
+    "domain" : "35",
+    "subproperty" : [ "211", "114" ],
+    "comment" : {
+      "undefined" : "item of - The link from an item to the Bag where it is contained"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_frequentato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "Ë_frequentato"
+    },
+    "domain" : "112",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con l'utente che li frequenta"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "279"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#felicita",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "280",
+    "label" : {
+      "IRI-based" : "felicita"
+    },
+    "domain" : "65",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "281"
+  }, {
+    "range" : "93",
+    "domain" : "221",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "93",
+    "domain" : "239",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "93",
+    "domain" : "227",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#disgusto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "284",
+    "label" : {
+      "IRI-based" : "disgusto"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "286"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#previousItem",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "previousItem",
+      "undefined" : "previous item"
+    },
+    "superproperty" : [ "287" ],
+    "domain" : "115",
+    "comment" : {
+      "undefined" : "previous item - The link to the previous item in a list (ordered collection)"
+    },
+    "attributes" : [ "functional", "object", "external" ],
+    "id" : "226"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_presente_lo_strumento",
+    "inverse" : "235",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "Ë_presente_lo_strumento"
+    },
+    "domain" : "236",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo strumento musicali con il brano in cui Ë presente"
+    },
+    "attributes" : [ "object" ],
+    "id" : "288"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#videoclip_di",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "videoclip_di"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani con i loro videoclip"
+    },
+    "attributes" : [ "functional", "object", "someValues" ],
+    "id" : "289"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_scritto",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "Ë_scritto"
+    },
+    "domain" : "291",
+    "comment" : {
+      "undefined" : "Una relazione che unisce lo spartito musicale con i loro autori"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "290"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "153",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "292"
+  }, {
+    "range" : "93",
+    "domain" : "294",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#partecipa",
+    "inverse" : "170",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "partecipa"
+    },
+    "domain" : "103",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con l'utente che li frequenta"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "295"
+  }, {
+    "range" : "93",
+    "domain" : "92",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "296"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ascolta",
+    "inverse" : "102",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "ascolta",
+      "undefined" : "ascolta"
+    },
+    "domain" : "103",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i brani ascoltati con gli utenti"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "297"
+  }, {
+    "range" : "93",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "197",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "157",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "299"
+  }, {
+    "range" : "93",
+    "domain" : "219",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "300"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "155",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "301"
+  }, {
+    "range" : "93",
+    "domain" : "220",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "153",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "303"
+  }, {
+    "range" : "93",
+    "domain" : "190",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "193",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "157",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "305"
+  }, {
+    "range" : "93",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#interpretato",
+    "inverse" : "128",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "interpretato"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli attori con i loro videoclip che hanno lavorato"
+    },
+    "attributes" : [ "object" ],
+    "id" : "310"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Numero_di_spettatori",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "312",
+    "label" : {
+      "IRI-based" : "Numero_di_spettatori"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype" ],
+    "id" : "311"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#canta",
+    "inverse" : "129",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "canta"
+    },
+    "domain" : "121",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le brani con i cantanti che li cantano"
+    },
+    "attributes" : [ "object" ],
+    "id" : "313"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#appartiene",
+    "inverse" : "41",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "appartiene",
+      "undefined" : "appartiene"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Ogni brano appartiene ad uno o pi˘ generi musicali"
+    },
+    "attributes" : [ "transitive", "object" ],
+    "id" : "315"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl#firstItemOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/list.owl",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "firstItemOf",
+      "undefined" : "first item of"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "115",
+    "attributes" : [ "object", "external" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_guardato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "Ë_guardato"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli utenti con i videoclip che ha guardato"
+    },
+    "attributes" : [ "object" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_leta_di",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "223",
+    "label" : {
+      "IRI-based" : "Ë_leta_di"
+    },
+    "domain" : "78",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli utenti con la loro et‡"
+    },
+    "attributes" : [ "object" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_il_ricavato_di",
+    "inverse" : "111",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "Ë_il_ricavato_di"
+    },
+    "domain" : "113",
+    "comment" : {
+      "undefined" : "Una relazione che unisce gli eventi con i loro incassi"
+    },
+    "attributes" : [ "object" ],
+    "id" : "317"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#dirige",
+    "inverse" : "94",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "dirige",
+      "undefined" : "dirige"
+    },
+    "domain" : "95",
+    "comment" : {
+      "undefined" : "Una relazione che unisce i registi con i videoclip che dirigono"
+    },
+    "attributes" : [ "object" ],
+    "id" : "318"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "319"
+  }, {
+    "range" : "23",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "320"
+  }, {
+    "range" : "32",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "321"
+  }, {
+    "range" : "32",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "322"
+  }, {
+    "range" : "17",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "323"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes",
+    "inverse" : "96",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/sequence.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "precedes",
+      "en" : "precedes",
+      "it" : "precede"
+    },
+    "domain" : "29",
+    "subproperty" : [ "287" ],
+    "comment" : {
+      "undefined" : "A relation between entities, expressing a 'sequence' schema. \nE.g. 'year 1999 precedes 2000', 'deciding what coffee to use' precedes 'preparing coffee', 'World War II follows World War I', 'in the Milan to Rome autoroute, Bologna precedes Florence', etc.\nIt can then be used between tasks, processes, time intervals, spatially locate objects, situations, etc. \nSubproperties can be defined in order to distinguish the different uses."
+    },
+    "attributes" : [ "transitive", "object", "external" ],
+    "id" : "324"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "325"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "326"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amore",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "329",
+    "label" : {
+      "IRI-based" : "Amore"
+    },
+    "domain" : "87",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "328"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "234",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "63",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "330"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "193",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "62",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "197",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "62",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "332"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#appartiene",
+    "inverse" : "41",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "appartiene",
+      "undefined" : "appartiene"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Ogni brano appartiene ad uno o pi˘ generi musicali"
+    },
+    "attributes" : [ "transitive", "object", "someValues" ],
+    "id" : "333"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_cantato",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "Ë_cantato"
+    },
+    "domain" : "43",
+    "comment" : {
+      "undefined" : "Una relazione che unisce le brani con i cantanti che li cantano"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "334"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#genere",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "314",
+    "label" : {
+      "IRI-based" : "genere"
+    },
+    "domain" : "336",
+    "attributes" : [ "datatype" ],
+    "id" : "335"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#spartito_musicale",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "316",
+    "label" : {
+      "IRI-based" : "spartito_musicale"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype" ],
+    "id" : "337"
+  }, {
+    "range" : "106",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "338"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amicizia",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "327",
+    "label" : {
+      "IRI-based" : "Amicizia"
+    },
+    "domain" : "82",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "339"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "iri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ë_residente",
+    "baseIri" : "http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "Ë_residente"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "Una relazione che unisce l'artista con la citt‡ in cui risiede"
+    },
+    "attributes" : [ "object" ],
+    "id" : "341"
+  }, {
+    "range" : "56",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "106",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "95",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "51",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "345"
+  }, {
+    "range" : "51",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "56",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "51",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "19",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "19",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl#isMemberOf",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+    "range" : "106",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/collectionentity.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMemberOf",
+      "en" : "is member of"
+    },
+    "domain" : "180",
+    "subproperty" : [ "117" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "181"
+  }, {
+    "range" : "18",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "352"
+  }, {
+    "range" : "18",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "353"
+  } ]
+}

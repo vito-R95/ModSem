@@ -1,0 +1,3308 @@
+@prefix : <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni> .
+
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni> rdf:type owl:Ontology ;
+                                                                                            owl:imports <http://www.ontologydesignpatterns.org/cp/owl/list.owl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem
+<http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes
+<http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#firstItemOf
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#firstItemOf> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemOf> ;
+                                                                    rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                    rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> ;
+                                                                    rdfs:label "first item of" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasFirstItem
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasFirstItem> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem> ;
+                                                                     owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/list.owl#firstItemOf> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> ;
+                                                                     rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                     rdfs:comment "first item - The link to the first item of the list" ;
+                                                                     rdfs:label "has first item" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasLastItem
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasLastItem> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem> ;
+                                                                    rdf:type owl:FunctionalProperty ;
+                                                                    rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> ;
+                                                                    rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                    rdfs:comment "last item - The link to the last item of the list" ;
+                                                                    rdfs:label "has last item" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#lastItemOf
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#lastItemOf> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#itemOf> ;
+                                                                   owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/list.owl#hasLastItem> ;
+                                                                   rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                   rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> ;
+                                                                   rdfs:label "last item of" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#nextItem
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#nextItem> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyFollows> ;
+                                                                 owl:inverseOf <http://www.ontologydesignpatterns.org/cp/owl/list.owl#previousItem> ;
+                                                                 rdf:type owl:FunctionalProperty ;
+                                                                 rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                 rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                 rdfs:comment "next item - The link to the next item in a list (ordered collection)" ;
+                                                                 rdfs:label "next item" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#previousItem
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#previousItem> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#directlyPrecedes> ;
+                                                                     rdf:type owl:FunctionalProperty ;
+                                                                     rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                     rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+                                                                     rdfs:comment "previous item - The link to the previous item in a list (ordered collection)" ;
+                                                                     rdfs:label "previous item" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#album_contiene
+:album_contiene rdf:type owl:ObjectProperty ;
+                owl:inverseOf :contenuto_in_album ;
+                rdf:type owl:TransitiveProperty ;
+                rdfs:domain :album ;
+                rdfs:range :Brano ;
+                rdfs:comment "Relazione che unisce tutti i brani dell'album con il brano" ;
+                rdfs:label "album_contiene" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#appartiene
+:appartiene rdf:type owl:ObjectProperty ;
+            owl:inverseOf :è_appartenuto ;
+            rdf:type owl:TransitiveProperty ;
+            rdfs:domain :Brano ;
+            rdfs:range :Genere_musicale ;
+            rdfs:comment "Ogni brano appartiene ad uno o più generi musicali" ;
+            rdfs:label "appartiene" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ascolta
+:ascolta rdf:type owl:ObjectProperty ;
+         owl:inverseOf :è_ascoltato ;
+         rdfs:domain :Utente ;
+         rdfs:range :Brano ;
+         rdfs:comment "Una relazione che unisce i brani ascoltati con gli utenti" ;
+         rdfs:label "ascolta" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#canta
+:canta rdf:type owl:ObjectProperty ;
+       owl:inverseOf :è_cantato ;
+       rdfs:domain :cantante ;
+       rdfs:range :Brano ;
+       rdfs:comment "Una relazione che unisce le brani con i cantanti che li cantano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#contenuto_in_album
+:contenuto_in_album rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Brano ;
+                    rdfs:range :album ;
+                    rdfs:comment "Relazione che unisce tutti i brani dell'album con il brano" ;
+                    rdfs:label "contenuto_in_album" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#contieneTesto
+:contieneTesto rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :scrittoTesto ;
+               rdfs:domain :Brano ;
+               rdfs:range :Paroliere .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#dirige
+:dirige rdf:type owl:ObjectProperty ;
+        owl:inverseOf :è_diretto ;
+        rdfs:domain :regista ;
+        rdfs:range :Videoclip ;
+        rdfs:comment "Una relazione che unisce i registi con i videoclip che dirigono" ;
+        rdfs:label "dirige" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#guarda
+:guarda rdf:type owl:ObjectProperty ;
+        owl:inverseOf :è_guardato ;
+        rdfs:domain :Utente ;
+        rdfs:range :Videoclip ;
+        rdfs:comment "Una relazione che unisce gli utenti con i videoclip che ha guardato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_età
+:ha_età rdf:type owl:ObjectProperty ;
+        owl:inverseOf :è_leta_di ;
+        rdfs:range :Età ;
+        rdfs:comment "Una relazione che unisce gli utenti con la loro età" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_incassato
+:ha_incassato rdf:type owl:ObjectProperty ;
+              owl:inverseOf <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_l'incasso_di> ;
+              rdfs:domain :album ;
+              rdfs:range :Guadagno_album ;
+              rdfs:comment "Una relazione che unisce gli album con i loro incassi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_videoclip
+:ha_videoclip rdf:type owl:ObjectProperty ;
+              owl:inverseOf :videoclip_di ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Brano ;
+              rdfs:range :Videoclip ;
+              rdfs:comment "Una relazione che unisce i brani con i loro videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#interpretato
+:interpretato rdf:type owl:ObjectProperty ;
+              owl:inverseOf :recita ;
+              rdfs:domain :Videoclip ;
+              rdfs:range :attore ;
+              rdfs:comment "Una relazione che unisce gli attori con i loro videoclip che hanno lavorato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ospita
+:ospita rdf:type owl:ObjectProperty ;
+        owl:inverseOf :si_svolge ;
+        rdfs:domain :Luogo_evento ;
+        rdfs:range :evento ;
+        rdfs:comment "Una relazione che unisce gli eventi con la città in cui si svolge l'evento" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#partecipa
+:partecipa rdf:type owl:ObjectProperty ;
+           owl:inverseOf :è_frequentato ;
+           rdfs:domain :Utente ;
+           rdfs:range :evento ;
+           rdfs:comment "Una relazione che unisce gli eventi con l'utente che li frequenta" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#possiede
+:possiede rdf:type owl:ObjectProperty ;
+          owl:inverseOf :situatoIN ;
+          rdfs:domain :Città ;
+          rdfs:range :Luogo_evento ;
+          rdfs:comment "Una relazione che unisce la città con il luogo di un evento" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pubblicano
+:pubblicano rdf:type owl:ObjectProperty ;
+            owl:inverseOf :sono_pubblicati ;
+            rdfs:domain :Piattaforme_di_pubblicazione ;
+            rdfs:range :Brano ;
+            rdfs:comment "Una relazione che unisce le piattaforme di pubblicazione con i brani che vengono pubblicati" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#recita
+:recita rdf:type owl:ObjectProperty ;
+        rdfs:domain :attore ;
+        rdfs:range :Videoclip ;
+        rdfs:comment "Una relazione che unisce gli attori con i loro videoclip che hanno lavorato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scrittoTesto
+:scrittoTesto rdf:type owl:ObjectProperty ;
+              owl:inverseOf :scriveTesto ;
+              rdfs:domain :Brano ,
+                          :Testo_brano ;
+              rdfs:range :Paroliere ;
+              rdfs:comment "Una relazione che unisce il testo del brano con i loro autori" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scrive
+:scrive rdf:type owl:ObjectProperty ;
+        owl:inverseOf :è_scritto ;
+        rdfs:domain :musicista ;
+        rdfs:range :Brano ;
+        rdfs:comment "Una relazione che unisce lo spartito musicale con i loro autori" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#scriveTesto
+:scriveTesto rdf:type owl:ObjectProperty ;
+             rdfs:domain :Paroliere ;
+             rdfs:range :Brano ,
+                        :Testo_brano ;
+             rdfs:comment "Una relazione che unisce il testo del brano con i loro autori" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#si_svolge
+:si_svolge rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :evento ;
+           rdfs:range :Luogo_evento ;
+           rdfs:comment "Una relazione che unisce gli eventi con la città in cui si svolge l'evento" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#situatoIN
+:situatoIN rdf:type owl:ObjectProperty ;
+           rdfs:domain :Luogo_evento ;
+           rdfs:range :Città ;
+           rdfs:comment "Una relazione che unisce la città con il luogo di un evento" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sono_pubblicati
+:sono_pubblicati rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Brano ;
+                 rdfs:range :Piattaforme_di_pubblicazione ;
+                 rdfs:comment "Una relazione che unisce le piattaforme di pubblicazione con i brani che vengono pubblicati" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sono_suscitate
+:sono_suscitate rdf:type owl:ObjectProperty ;
+                owl:inverseOf :suscitano ;
+                rdfs:domain :Emozioni ;
+                rdfs:range :Brano ;
+                rdfs:comment "Una relazione che unisce lo le emozioni con i brani che li suscitano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#suscitano
+:suscitano rdf:type owl:ObjectProperty ;
+           rdfs:domain :Brano ;
+           rdfs:range :Emozioni ;
+           rdfs:comment "Una relazione che unisce lo le emozioni con i brani che li suscitano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#svolto
+:svolto rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#videoclip_di
+:videoclip_di rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Videoclip ;
+              rdfs:range :Brano ;
+              rdfs:comment "Una relazione che unisce i brani con i loro videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vince
+:vince rdf:type owl:ObjectProperty ;
+       owl:inverseOf :è_vinta ;
+       rdfs:comment "Una relazione che unisce le certificazioni con i brano in cui ha vinto una certificazione" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_appartenuto
+:è_appartenuto rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:domain :Genere_musicale ;
+               rdfs:range :Brano ;
+               rdfs:comment "Ogni brano appartiene ad uno o più generi musicali" ;
+               rdfs:label "è_appartenuto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_ascoltato
+:è_ascoltato rdf:type owl:ObjectProperty ;
+             rdfs:domain :Brano ;
+             rdfs:range :Utente ;
+             rdfs:comment "Una relazione che unisce i brani ascoltati con gli utenti" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_cantato
+:è_cantato rdf:type owl:ObjectProperty ;
+           rdfs:domain :Brano ;
+           rdfs:range :cantante ;
+           rdfs:comment "Una relazione che unisce le brani con i cantanti che li cantano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_definito
+:è_definito rdf:type owl:ObjectProperty ;
+            rdfs:domain :Genere_musicale ;
+            rdfs:range :strumenti_musicali ;
+            rdfs:comment "Una relazione che unisce gli strumenti musicali con il genere musicale che creano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_diretto
+:è_diretto rdf:type owl:ObjectProperty ;
+           rdfs:domain :Videoclip ;
+           rdfs:range :regista ;
+           rdfs:comment "Una relazione che unisce i registi con i videoclip che dirigono" ;
+           rdfs:label "è_diretto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_frequentato
+:è_frequentato rdf:type owl:ObjectProperty ;
+               rdfs:domain :evento ;
+               rdfs:range :Utente ;
+               rdfs:comment "Una relazione che unisce gli eventi con l'utente che li frequenta" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_guardato
+:è_guardato rdf:type owl:ObjectProperty ;
+            rdfs:domain :Videoclip ;
+            rdfs:range :Utente ;
+            rdfs:comment "Una relazione che unisce gli utenti con i videoclip che ha guardato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_il_ricavato_di
+:è_il_ricavato_di rdf:type owl:ObjectProperty ;
+                  owl:inverseOf <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_ricavato_dall'evento> ;
+                  rdfs:domain :Guadagno_evento ;
+                  rdfs:range :evento ;
+                  rdfs:comment "Una relazione che unisce gli eventi con i loro incassi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_leta_di
+:è_leta_di rdf:type owl:ObjectProperty ;
+           rdfs:domain :Età ;
+           rdfs:comment "Una relazione che unisce gli utenti con la loro età" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_presente_lo_strumento
+:è_presente_lo_strumento rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :è_uno_strumento_presente ;
+                         rdfs:range :strumenti_musicali ;
+                         rdfs:comment "Una relazione che unisce lo strumento musicali con il brano in cui è presente" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_residente
+:è_residente rdf:type owl:ObjectProperty ;
+             rdfs:domain :Artista ;
+             rdfs:range :Città ;
+             rdfs:comment "Una relazione che unisce l'artista con la città in cui risiede" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_scritto
+:è_scritto rdf:type owl:ObjectProperty ;
+           rdfs:domain :Brano ;
+           rdfs:range :musicista ;
+           rdfs:comment "Una relazione che unisce lo spartito musicale con i loro autori" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_uno_strumento_presente
+:è_uno_strumento_presente rdf:type owl:ObjectProperty ;
+                          rdfs:domain :strumenti_musicali ;
+                          rdfs:comment "Una relazione che unisce lo strumento musicali con il brano in cui è presente" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_vinta
+:è_vinta rdf:type owl:ObjectProperty ;
+         rdfs:comment "Una relazione che unisce le certificazioni con i brano in cui ha vinto una certificazione" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_ricavato_dall'evento
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ha_ricavato_dall'evento> rdf:type owl:ObjectProperty ;
+                                                                                                                   rdfs:domain :evento ;
+                                                                                                                   rdfs:range :Guadagno_evento ;
+                                                                                                                   rdfs:comment "Una relazione che unisce gli eventi con i loro incassi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_l'incasso_di
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#è_l'incasso_di> rdf:type owl:ObjectProperty ;
+                                                                                                          rdfs:domain :Guadagno_album ;
+                                                                                                          rdfs:range :album ;
+                                                                                                          rdfs:comment "Una relazione che unisce gli album con i loro incassi" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amicizia
+:Amicizia rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amore
+:Amore rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Gioia
+:Gioia rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Numero_ascolti
+:Numero_ascolti rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Numero_di_spettatori
+:Numero_di_spettatori rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Titolo
+:Titolo rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Brano ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#disgusto
+:disgusto rdf:type owl:DatatypeProperty ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:oneOf [ rdf:type rdf:List ;
+                                   rdf:first "avversione" ;
+                                   rdf:rest [ rdf:type rdf:List ;
+                                              rdf:first "deluso" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "disapprovazione" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "orrore" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "repulsione" ;
+                                                                               rdf:rest rdf:nil
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                            ]
+                                 ]
+                     ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#dove
+:dove rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#età
+:età rdf:type owl:DatatypeProperty ;
+     rdfs:range rdfs:Literal ,
+                xsd:int .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#euro
+:euro rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#felicita
+:felicita rdf:type owl:DatatypeProperty ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:oneOf [ rdf:type rdf:List ;
+                                   rdf:first "divertito" ;
+                                   rdf:rest [ rdf:type rdf:List ;
+                                              rdf:first "estasiato" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "fiducioso" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "gioioso" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "interessato" ;
+                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                          rdf:first "orgoglioso" ;
+                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                     rdf:first "ottimista" ;
+                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                rdf:first "soddisfatto" ;
+                                                                                                                rdf:rest rdf:nil
+                                                                                                              ]
+                                                                                                   ]
+                                                                                        ]
+                                                                             ]
+                                                                  ]
+                                                       ]
+                                            ]
+                                 ]
+                     ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#genere
+:genere rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Artista ,
+                    :Utente ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#incasso
+:incasso rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#incasso_album
+:incasso_album rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#milano
+:milano rdf:type owl:DatatypeProperty ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:oneOf [ rdf:type rdf:List ;
+                                 rdf:first "san siro" ;
+                                 rdf:rest rdf:nil
+                               ]
+                   ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#minutaggio
+:minutaggio rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#paura
+:paura rdf:type owl:DatatypeProperty ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first "ansioso" ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first "impaurito" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "inadeguato" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "insicuro" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "respinto" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "sottomesso" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "spaventato" ;
+                                                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                                                             rdf:first "terrorizzato" ;
+                                                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                                                        rdf:first "umiliato" ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+                              ]
+                  ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#rabbia
+:rabbia rdf:type owl:DatatypeProperty ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:oneOf [ rdf:type rdf:List ;
+                                 rdf:first "aggressivo" ;
+                                 rdf:rest [ rdf:type rdf:List ;
+                                            rdf:first "arrabbiato" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "distaccato" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "ferito" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "sfrustrato" ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                                     ]
+                                          ]
+                               ]
+                   ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sorpresa
+:sorpresa rdf:type owl:DatatypeProperty ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:oneOf [ rdf:type rdf:List ;
+                                   rdf:first "confuso" ;
+                                   rdf:rest [ rdf:type rdf:List ;
+                                              rdf:first "energico" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "scioccato" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "spaventato" ;
+                                                                    rdf:rest rdf:nil
+                                                                  ]
+                                                       ]
+                                            ]
+                                 ]
+                     ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#spartito_musicale
+:spartito_musicale rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Brano ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#testo
+:testo rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Brano ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#tristezza
+:tristezza rdf:type owl:DatatypeProperty ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "abbandonato" ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "annoiato" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "apatico" ;
+                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                     rdf:first "colpevole" ;
+                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                rdf:first "disperato" ;
+                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                           rdf:first "ignorato" ;
+                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                      rdf:first "indifferente" ;
+                                                                                                      rdf:rest rdf:nil
+                                                                                                    ]
+                                                                                         ]
+                                                                              ]
+                                                                   ]
+                                                        ]
+                                             ]
+                                  ]
+                      ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#List
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Bag> ;
+                                                             rdfs:comment "List - An ordered array of items, that can be present in multiple copies" ;
+                                                             rdfs:label "list" .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem
+<http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#Item> ;
+                                                                 rdfs:comment "ListItem - Element belonging to a list" ;
+                                                                 rdfs:label "list item" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Adolescenziale
+:Adolescenziale rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :età ;
+                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:integer ;
+                                                           owl:withRestrictions ( [ xsd:minExclusive 12
+                                                                                  ]
+                                                                                  [ xsd:maxInclusive 17
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                    ] ;
+                rdfs:subClassOf :Età ;
+                rdfs:comment "E' l'eta che fa riferimento ad un individuo adolescente" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Adulta
+:Adulta rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :età ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:onDatatype xsd:integer ;
+                                                   owl:withRestrictions ( [ xsd:minExclusive 17
+                                                                          ]
+                                                                        )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :Età ;
+        rdfs:comment "E' l'eta che fa riferimento ad un individuo adulto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amicizia
+:Amicizia rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :Amicizia ;
+                                owl:someValuesFrom xsd:string
+                              ] ;
+          rdfs:subClassOf :Temi_testo_musicale .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amore
+:Amore rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :Amore ;
+                             owl:someValuesFrom xsd:string
+                           ] ;
+       rdfs:subClassOf :Temi_testo_musicale .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Artista
+:Artista rdf:type owl:Class ;
+         rdfs:comment "Con artista si indica generalmente una persona la cui attività si esprime nel campo dell'arte." ;
+         rdfs:label "Artista" ;
+         rdfs:seeAlso "https://dbpedia.org/ontology/Artist" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreCalabrese
+:AttoreCalabrese rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_residente ;
+                                       owl:someValuesFrom :Crotone
+                                     ] ;
+                 rdfs:subClassOf :AttoreItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreFrancese
+:AttoreFrancese rdf:type owl:Class ;
+                rdfs:subClassOf :NazionalitàAttore .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreItaliano
+:AttoreItaliano rdf:type owl:Class ;
+                rdfs:subClassOf :NazionalitàAttore .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttorePugliese
+:AttorePugliese rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :è_residente ;
+                                      owl:someValuesFrom :Foggia
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :è_residente ;
+                                      owl:someValuesFrom :bari
+                                    ] ;
+                rdfs:subClassOf :AttoreItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#AttoreTedesco
+:AttoreTedesco rdf:type owl:Class ;
+               rdfs:subClassOf :NazionalitàAttore .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Brano
+:Brano rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :appartiene ;
+                             owl:someValuesFrom :Genere_musicale
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :è_cantato ;
+                             owl:someValuesFrom :cantante
+                           ] ;
+       rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/list.owl#ListItem> ;
+       rdfs:seeAlso "https://dbpedia.org/page/Music" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteFrancese
+:CantanteFrancese rdf:type owl:Class ;
+                  rdfs:subClassOf :NazionalitàCantante .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteItaliano
+:CantanteItaliano rdf:type owl:Class ;
+                  rdfs:subClassOf :NazionalitàCantante .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteLaziale
+:CantanteLaziale rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_residente ;
+                                       owl:someValuesFrom :roma
+                                     ] ;
+                 rdfs:subClassOf :CantanteItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteLombardo
+:CantanteLombardo rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :è_residente ;
+                                        owl:someValuesFrom :milano
+                                      ] ;
+                  rdfs:subClassOf :CantanteItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteSiciliano
+:CantanteSiciliano rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :è_residente ;
+                                         owl:someValuesFrom :Messina
+                                       ] ;
+                   rdfs:subClassOf :CantanteItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#CantanteTedesco
+:CantanteTedesco rdf:type owl:Class ;
+                 rdfs:subClassOf :NazionalitàCantante .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Certificazione
+:Certificazione rdf:type owl:Class ;
+                rdfs:comment "è un documento contenente una certificazione" ;
+                rdfs:label "Certificazione" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Città
+:Città rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :possiede ;
+                             owl:someValuesFrom :Luogo_evento
+                           ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Crotone
+:Crotone rdf:type owl:Class ;
+         rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Emozioni
+:Emozioni rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :sono_suscitate ;
+                                owl:someValuesFrom :Brano
+                              ] ;
+          rdfs:comment "Le emozioni sono stati mentali e fisiologici associati a modificazioni psicologiche, a stimoli interni o esterni." ;
+          rdfs:label "Emozioni" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Età
+:Età rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :è_leta_di ;
+                           owl:someValuesFrom :Utente
+                         ] ;
+     rdfs:comment "E' l'eta che fa riferimento ad un individuo" ;
+     rdfs:label "Età" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Firenze
+:Firenze rdf:type owl:Class ;
+         rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Foggia
+:Foggia rdf:type owl:Class ;
+        rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Genere_musicale
+:Genere_musicale rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_definito ;
+                                       owl:someValuesFrom :strumenti_musicali
+                                     ] ;
+                 rdfs:comment "Un genere musicale è una categoria convenzionale che identifica e classifica i brani e le composizioni in base a criteri di affinità" ;
+                 rdfs:label "Genere_musicale" ;
+                 rdfs:seeAlso "https://dbpedia.org/ontology/MusicGenre" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Gioia
+:Gioia rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :Gioia ;
+                             owl:someValuesFrom xsd:string
+                           ] ;
+       rdfs:subClassOf :Temi_testo_musicale .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno
+:Guadagno rdf:type owl:Class ;
+          rdfs:comment "è un lucro che si ottiene da una certa attività economica" ;
+          rdfs:label "Guadagno" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno_album
+:Guadagno_album rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :incasso_album ;
+                                      owl:someValuesFrom owl:rational
+                                    ] ;
+                rdfs:subClassOf :Guadagno ;
+                rdfs:comment "Sono i guadagni che provengono dal lucro di un album" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Guadagno_evento
+:Guadagno_evento rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :incasso ;
+                                       owl:someValuesFrom owl:rational
+                                     ] ;
+                 rdfs:subClassOf :Guadagno ;
+                 rdfs:comment "Sono i guadagni che provengono dal lucro di un evento" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Luogo_evento
+:Luogo_evento rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty :situatoIN ;
+                                    owl:someValuesFrom :Città
+                                  ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Messina
+:Messina rdf:type owl:Class ;
+         rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MostPopular
+:MostPopular rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty :vince ;
+                                   owl:someValuesFrom :oro
+                                 ] .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaEmiliano-Romagnolo
+:MusicistaEmiliano-Romagnolo rdf:type owl:Class ;
+                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :è_residente ;
+                                                   owl:someValuesFrom :bologna
+                                                 ] ;
+                             rdfs:subClassOf :MusicistaItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaFrancese
+:MusicistaFrancese rdf:type owl:Class ;
+                   rdfs:subClassOf :NazionalitàMusicista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaItaliano
+:MusicistaItaliano rdf:type owl:Class ;
+                   rdfs:subClassOf :NazionalitàMusicista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaPiemonte
+:MusicistaPiemonte rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :è_residente ;
+                                         owl:someValuesFrom :torino
+                                       ] ;
+                   rdfs:subClassOf :MusicistaItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MusicistaTedesco
+:MusicistaTedesco rdf:type owl:Class ;
+                  rdfs:subClassOf :NazionalitàMusicista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#NazionalitàAttore
+:NazionalitàAttore rdf:type owl:Class ;
+                   rdfs:subClassOf :attore .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#NazionalitàCantante
+:NazionalitàCantante rdf:type owl:Class ;
+                     rdfs:subClassOf :cantante .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#NazionalitàMusicista
+:NazionalitàMusicista rdf:type owl:Class ;
+                      rdfs:subClassOf :musicista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#NazionalitàParoliere
+:NazionalitàParoliere rdf:type owl:Class ;
+                      rdfs:subClassOf :Paroliere .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#NazionalitàRegista
+:NazionalitàRegista rdf:type owl:Class ;
+                    rdfs:subClassOf :regista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Paroliere
+:Paroliere rdf:type owl:Class ;
+           rdfs:subClassOf :Artista ;
+           rdfs:comment "Il paroliere è colui che scrive i testi di un brano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereFrancese
+:ParoliereFrancese rdf:type owl:Class ;
+                   rdfs:subClassOf :NazionalitàParoliere .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereItaliano
+:ParoliereItaliano rdf:type owl:Class ;
+                   rdfs:subClassOf :NazionalitàParoliere .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereLaziale
+:ParoliereLaziale rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :è_residente ;
+                                        owl:someValuesFrom :roma
+                                      ] ;
+                  rdfs:subClassOf :ParoliereItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereTedesco
+:ParoliereTedesco rdf:type owl:Class ;
+                  rdfs:subClassOf :NazionalitàParoliere .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ParoliereToscano
+:ParoliereToscano rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :è_residente ;
+                                        owl:someValuesFrom :Firenze
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :è_residente ;
+                                        owl:someValuesFrom :Volterra
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :è_residente ;
+                                        owl:someValuesFrom :livorno
+                                      ] ;
+                  rdfs:subClassOf :ParoliereItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pediatrica
+:Pediatrica rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :età ;
+                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:onDatatype xsd:integer ;
+                                                       owl:withRestrictions ( [ xsd:minExclusive 0
+                                                                              ]
+                                                                              [ xsd:maxInclusive 12
+                                                                              ]
+                                                                            )
+                                                     ]
+                                ] ;
+            rdfs:subClassOf :Età ;
+            rdfs:comment "E' l'eta che fa riferimento ad un individuo di età pediatrica" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Piattaforme_di_pubblicazione
+:Piattaforme_di_pubblicazione rdf:type owl:Class ;
+                              rdfs:comment "è un servizio online/fisico che permette di ascoltare dei brani" ;
+                              rdfs:label "Piattaforme_di_pubblicazione" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaFrancese
+:RegistaFrancese rdf:type owl:Class ;
+                 rdfs:subClassOf :NazionalitàRegista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaItaliano
+:RegistaItaliano rdf:type owl:Class ;
+                 rdfs:subClassOf :NazionalitàRegista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaLombardo
+:RegistaLombardo rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_residente ;
+                                       owl:someValuesFrom :milano
+                                     ] ;
+                 rdfs:subClassOf :RegistaItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaPugliese
+:RegistaPugliese rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_residente ;
+                                       owl:someValuesFrom :Foggia
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :è_residente ;
+                                       owl:someValuesFrom :bari
+                                     ] ;
+                 rdfs:subClassOf :RegistaItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaTedesco
+:RegistaTedesco rdf:type owl:Class ;
+                rdfs:subClassOf :NazionalitàRegista .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RegistaVeneto
+:RegistaVeneto rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty :è_residente ;
+                                     owl:someValuesFrom :padova
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :è_residente ;
+                                     owl:someValuesFrom :verona
+                                   ] ;
+               rdfs:subClassOf :RegistaItaliano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Temi_testo_musicale
+:Temi_testo_musicale rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Testo_brano
+:Testo_brano rdf:type owl:Class ;
+             rdfs:comment "è un insieme di parole correlate fra loro per formare un'unità logico-concettuale, per la produzione di un brano musicale" ;
+             rdfs:label "Testo_brano" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Testo_musicali
+:Testo_musicali rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty :è_scritto ;
+                                      owl:someValuesFrom :musicista
+                                    ] ;
+                rdfs:label "Testo_musicali" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Utente
+:Utente rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :ascolta ;
+                              owl:someValuesFrom :Brano
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :partecipa ;
+                              owl:someValuesFrom :evento
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :ha_età ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Età
+                            ] ;
+        rdfs:comment "Un individuo che ascolta musiche degli artisti" ;
+        rdfs:label "Utente" ;
+        rdfs:seeAlso "https://dbpedia.org/page/Customer" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Videoclip
+:Videoclip rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :interpretato ;
+                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :attore
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :è_diretto ;
+                                                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :regista
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :videoclip_di ;
+                                 owl:someValuesFrom :Brano
+                               ] ;
+           rdfs:comment "Il video musicale è un filmato di durata variabile, non necessariamente breve,che può essere scenografato," ;
+           rdfs:label "Videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Volterra
+:Volterra rdf:type owl:Class ;
+          rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#album
+:album rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/list.owl#List> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#attore
+:attore rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :recita ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Videoclip
+                            ] ;
+        rdfs:subClassOf :Artista ;
+        rdfs:comment "Un attore è chi rappresenta o interpreta una parte o un ruolo in un videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#bari
+:bari rdf:type owl:Class ;
+      rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#bologna
+:bologna rdf:type owl:Class ;
+         rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#cantante
+:cantante rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :canta ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Brano
+                              ] ;
+          rdfs:subClassOf :Artista ;
+          rdfs:comment "Il cantante è un soggetto che, mediante l'utilizzo della propria voce produce una successione di suoni" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#diamante
+:diamante rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Class ;
+                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                owl:onProperty :Numero_ascolti ;
+                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minExclusive 1000000
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                              ]
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :incasso_album ;
+                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                     owl:onDatatype xsd:integer ;
+                                                                     owl:withRestrictions ( [ xsd:minExclusive 500000
+                                                                                            ]
+                                                                                          )
+                                                                   ]
+                                              ]
+                                            )
+                              ] ;
+          rdfs:subClassOf :Certificazione ;
+          rdfs:comment "è un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 40000 e 250000 ascolti." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#disgusto
+:disgusto rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :disgusto ;
+                                owl:someValuesFrom xsd:string
+                              ] ;
+          rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#doppio_platino
+:doppio_platino rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :Numero_ascolti ;
+                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minExclusive 200000
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :incasso_album ;
+                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minExclusive 100000
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                    ]
+                                                  )
+                                    ] ;
+                rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#evento
+:evento rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :si_svolge ;
+                              owl:someValuesFrom :Luogo_evento
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :è_frequentato ;
+                              owl:someValuesFrom :Utente
+                            ] ;
+        rdfs:comment "una manifestazione nell'ambito dell'organizzazione eventi" ;
+        rdfs:label "evento" ;
+        rdfs:seeAlso "https://dbpedia.org/ontology/Event" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#felicita
+:felicita rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :felicita ;
+                                owl:someValuesFrom xsd:string
+                              ] ;
+          rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#grande
+:grande rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :Numero_di_spettatori ;
+                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                   owl:onDatatype xsd:integer ;
+                                                   owl:withRestrictions ( [ xsd:minExclusive 10000
+                                                                          ]
+                                                                          [ xsd:maxInclusive 99000
+                                                                          ]
+                                                                        )
+                                                 ]
+                            ] ;
+        rdfs:subClassOf :evento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#livorno
+:livorno rdf:type owl:Class ;
+         rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#medio
+:medio rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :Numero_di_spettatori ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:onDatatype xsd:integer ;
+                                                  owl:withRestrictions ( [ xsd:minExclusive 5000
+                                                                         ]
+                                                                         [ xsd:maxInclusive 10000
+                                                                         ]
+                                                                       )
+                                                ]
+                           ] ;
+       rdfs:subClassOf :evento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#milano
+:milano rdf:type owl:Class ;
+        rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#musicista
+:musicista rdf:type owl:Class ;
+           rdfs:subClassOf :Artista ;
+           rdfs:comment "Il musicista è una persona che scrive la musica compone quindi testo musicali" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#negozi
+:negozi rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:oneOf ( :Do_Re_Mi_Di
+                                          :Euronics
+                                          :Mediaword
+                                          :Trony
+                                          :Unieuro
+                                        )
+                            ] ;
+        rdfs:subClassOf :Piattaforme_di_pubblicazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#oro
+:oro rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Class ;
+                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                           owl:onProperty :Numero_ascolti ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:minExclusive 50000
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ]
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :incasso_album ;
+                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                owl:onDatatype xsd:integer ;
+                                                                owl:withRestrictions ( [ xsd:minExclusive 25000
+                                                                                       ]
+                                                                                     )
+                                                              ]
+                                         ]
+                                       )
+                         ] ;
+     rdfs:subClassOf :Certificazione ;
+     rdfs:comment "è un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 10000 e 20000  ascolti." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#padova
+:padova rdf:type owl:Class ;
+        rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#paura
+:paura rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :paura ;
+                             owl:someValuesFrom xsd:string
+                           ] ;
+       rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#piattaforma_di_streaming
+:piattaforma_di_streaming rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Class ;
+                                                owl:oneOf ( :Amazon_Music
+                                                            :Apple_Music
+                                                            :Deezer
+                                                            :Google_Play_Music
+                                                            :Spotify
+                                                            :Youtube
+                                                          )
+                                              ] ;
+                          rdfs:subClassOf :Piattaforme_di_pubblicazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#piccolo
+:piccolo rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :Numero_di_spettatori ;
+                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                    owl:onDatatype xsd:integer ;
+                                                    owl:withRestrictions ( [ xsd:minExclusive 0
+                                                                           ]
+                                                                           [ xsd:maxInclusive 5000
+                                                                           ]
+                                                                         )
+                                                  ]
+                             ] ;
+         rdfs:subClassOf :evento .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#platino
+:platino rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                               owl:onProperty :Numero_ascolti ;
+                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minExclusive 100000
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :incasso_album ;
+                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:integer ;
+                                                                    owl:withRestrictions ( [ xsd:minExclusive 50000
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                             ]
+                                           )
+                             ] ;
+         rdfs:subClassOf :Certificazione ;
+         rdfs:comment "è un documento contenente una certificazione per vincere questa certificazione bisogna avere tra 20000 e 40000  ascolti." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#quadruplo_platino
+:quadruplo_platino rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :Numero_ascolti ;
+                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:minExclusive 400000
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :incasso_album ;
+                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                              owl:onDatatype xsd:integer ;
+                                                                              owl:withRestrictions ( [ xsd:minExclusive 200000
+                                                                                                     ]
+                                                                                                   )
+                                                                            ]
+                                                       ]
+                                                     )
+                                       ] ;
+                   rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#rabbia
+:rabbia rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :rabbia ;
+                              owl:someValuesFrom xsd:string
+                            ] ;
+        rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#radio
+:radio rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Class ;
+                             owl:oneOf ( :Montecarlo
+                                         :RTL
+                                         :Radio24
+                                         :Radio_105
+                                         :Radio_Italia
+                                         :Radio_Zeta
+                                         :Radio_deejay
+                                         :RaiPlay_Sound
+                                         :Virgin
+                                       )
+                           ] ;
+       rdfs:subClassOf :Piattaforme_di_pubblicazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#regista
+:regista rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :dirige ;
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :Videoclip
+                             ] ;
+         rdfs:subClassOf :Artista ;
+         rdfs:comment "Il regista è il responsabile artistico e tecnico di un videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#roma
+:roma rdf:type owl:Class ;
+      rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sorpresa
+:sorpresa rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :sorpresa ;
+                                owl:someValuesFrom xsd:string
+                              ] ;
+          rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_a_fiato
+:strumenti_a_fiato rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:oneOf ( :clarinetto
+                                                     :corno
+                                                     :flauto
+                                                     :flauto_traverso
+                                                     :ottavino
+                                                     :sassofono
+                                                     :trombone
+                                                   )
+                                       ] ;
+                   rdfs:subClassOf :strumenti_musicali ;
+                   rdfs:comment "sono strumenti musicali nei quali l'aria stessa è il mezzo primario che viene messo in vibrazione producendo suono" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_ad_arco
+:strumenti_ad_arco rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Class ;
+                                         owl:oneOf ( :Arpa
+                                                     :Basso
+                                                     :Chitarra
+                                                     :Contrabbasso
+                                                     :Viola
+                                                     :Violino
+                                                     :Violoncello
+                                                   )
+                                       ] ;
+                   rdfs:subClassOf :strumenti_musicali ;
+                   rdfs:comment "sono strumenti musicali cordofoni nei quali la vibrazione delle corde è sollecitata da un arco" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_elettronici
+:strumenti_elettronici rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:oneOf ( :Basso_elettrico
+                                                         :Batteria_elettronico
+                                                         :Clavicembalo_elettronico
+                                                         :Corno_elettronico
+                                                         :Tastiera
+                                                         :chitarra_elettrica
+                                                       )
+                                           ] ;
+                       rdfs:subClassOf :strumenti_musicali ;
+                       rdfs:comment "è uno strumento musicale elettrofono che produce suoni per mezzo dell'elettronica analogica," .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumenti_musicali
+:strumenti_musicali rdf:type owl:Class ;
+                    rdfs:comment "è un oggetto costruito o modificato con lo scopo di produrre suoni" ;
+                    rdfs:label "strumenti_musicali" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumento_a_percussione
+:strumento_a_percussione rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Class ;
+                                               owl:oneOf ( :Bongo
+                                                           :Campanacci
+                                                           :Djembe
+                                                           :Maracas
+                                                           :Tamburelli
+                                                           :batteria
+                                                         )
+                                             ] ;
+                         rdfs:subClassOf :strumenti_musicali ;
+                         rdfs:comment "sono strumenti musicali il cui suono scaturisce dal battimento, dallo sfregamento o dall'agitazione, con o senza l'ausilio di bacchette" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#strumento_a_tastiera
+:strumento_a_tastiera rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:oneOf ( :Fortepiano
+                                                        :Organo
+                                                        :Pianoforte
+                                                        :Pianola
+                                                        :Spinetta
+                                                      )
+                                          ] ;
+                      rdfs:subClassOf :strumenti_musicali ;
+                      rdfs:comment "è un tipo di strumento musicale suonato usando una tastiera" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#torino
+:torino rdf:type owl:Class ;
+        rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#triplo_platino
+:triplo_platino rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Class ;
+                                      owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :Numero_ascolti ;
+                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minExclusive 300000
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                    ]
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :incasso_album ;
+                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                           owl:onDatatype xsd:integer ;
+                                                                           owl:withRestrictions ( [ xsd:minExclusive 150000
+                                                                                                  ]
+                                                                                                )
+                                                                         ]
+                                                    ]
+                                                  )
+                                    ] ;
+                rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#tristezza
+:tristezza rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :tristezza ;
+                                 owl:someValuesFrom xsd:string
+                               ] ;
+           rdfs:subClassOf :Emozioni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#tv
+:tv rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Class ;
+                          owl:oneOf ( :Deejay_TV
+                                      :MTV_Music
+                                    )
+                        ] ;
+    rdfs:subClassOf :Piattaforme_di_pubblicazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#verona
+:verona rdf:type owl:Class ;
+        rdfs:subClassOf :Città .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vevo
+:vevo rdf:type owl:Class ;
+      rdfs:subClassOf :Certificazione ;
+      rdfs:comment "è un documento contenente una certificazione per vincere questa certificazione bisogna avere e 100000000 ascolti su youtube." .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#5_platino
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#5_platino> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty :Numero_ascolti ;
+                                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 500000
+                                                                                                                                                                                       ]
+                                                                                                                                                                                     )
+                                                                                                                                                              ]
+                                                                                                                                         ]
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty :incasso_album ;
+                                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 250000
+                                                                                                                                                                                       ]
+                                                                                                                                                                                     )
+                                                                                                                                                              ]
+                                                                                                                                         ]
+                                                                                                                                       )
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#6_platino
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#6_platino> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :Numero_ascolti ;
+                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 600000
+                                                                                                                                                                       ]
+                                                                                                                                                                     )
+                                                                                                                                              ]
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#7_platino
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#7_platino> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :Numero_ascolti ;
+                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 700000
+                                                                                                                                                                       ]
+                                                                                                                                                                     )
+                                                                                                                                              ]
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#8_platino
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#8_platino> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :Numero_ascolti ;
+                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 800000
+                                                                                                                                                                       ]
+                                                                                                                                                                     )
+                                                                                                                                              ]
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf :Certificazione .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#9_platino
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#9_platino> rdf:type owl:Class ;
+                                                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :Numero_ascolti ;
+                                                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                owl:onDatatype xsd:integer ;
+                                                                                                                                                owl:withRestrictions ( [ xsd:minExclusive 900000
+                                                                                                                                                                       ]
+                                                                                                                                                                     )
+                                                                                                                                              ]
+                                                                                                                         ] ;
+                                                                                                     rdfs:subClassOf :Certificazione .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Addio
+:Addio rdf:type owl:NamedIndividual ;
+       :è_cantato :lauraPausini ;
+       :nome "Addio" ;
+       :paura "insicuro" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Al_Lewis
+:Al_Lewis rdf:type owl:NamedIndividual ;
+          :nome "Al Lewis" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Alessandro_Borghi
+:Alessandro_Borghi rdf:type owl:NamedIndividual ;
+                   :recita :benvenuto_videoclip ;
+                   :nome "Alessandro_Borghi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Alex_Turner
+:Alex_Turner rdf:type owl:NamedIndividual ;
+             :scriveTesto :do_i_wanna_know ;
+             :nome "Alex Turner" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Amazon_Music
+:Amazon_Music rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Apple_Music
+:Apple_Music rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Arpa
+:Arpa rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Artic_Monkeys
+:Artic_Monkeys rdf:type owl:NamedIndividual ;
+               :scriveTesto <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505> ;
+               :nome "black_market_music" ;
+               rdfs:seeAlso "https://dbpedia.org/page/Arctic_Monkeys" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Basso
+:Basso rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Basso_elettrico
+:Basso_elettrico rdf:type owl:NamedIndividual ;
+                 :è_uno_strumento_presente :beggin .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Batteria_elettronico
+:Batteria_elettronico rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Bob_Gaudio
+:Bob_Gaudio rdf:type owl:NamedIndividual ;
+            :scriveTesto :beggin ;
+            :nome "Bob Gaudio" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Bongo
+:Bongo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Campanacci
+:Campanacci rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Chitarra
+:Chitarra rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Clair_de_lune
+:Clair_de_lune rdf:type owl:NamedIndividual ;
+               :appartiene :musica_classica ;
+               :è_scritto :Debussy .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Clavicembalo_elettronico
+:Clavicembalo_elettronico rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Contrabbasso
+:Contrabbasso rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Corno_elettronico
+:Corno_elettronico rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Cristina
+:Cristina rdf:type owl:NamedIndividual ;
+          :partecipa :salmo_concerto ;
+          :età 5 ;
+          :nome "Cristina" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Damiano_David
+:Damiano_David rdf:type owl:NamedIndividual ;
+               :età 22 ;
+               :nome "Damiano_david" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Debussy
+:Debussy rdf:type owl:NamedIndividual ;
+         :età 23 ;
+         :nome "Debussy" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Deejay_TV
+:Deejay_TV rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Deezer
+:Deezer rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Djembe
+:Djembe rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Do_Re_Mi_Di
+:Do_Re_Mi_Di rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Eddie_Vedder
+:Eddie_Vedder rdf:type owl:NamedIndividual ;
+              :scriveTesto :black ;
+              :nome "Eddie Vedder" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Euronics
+:Euronics rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Fortepiano
+:Fortepiano rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Francesco_Favino
+:Francesco_Favino rdf:type owl:NamedIndividual ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :è_residente ;
+                             owl:someValuesFrom :roma
+                           ] ;
+                  :recita :addio_videoclip ,
+                          :benvenuto_videoclip ;
+                  :età 45 ;
+                  :nome "Francesco Favino" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Gaetano_Morbioli
+:Gaetano_Morbioli rdf:type owl:NamedIndividual ;
+                  :dirige :benvenuto_videoclip ,
+                          :marco_non_ce_videoclip ;
+                  :età 60 ;
+                  :nome "Gaetano Moribondi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Giorgio_Calabrese
+:Giorgio_Calabrese rdf:type owl:NamedIndividual ;
+                   :nome "Giorgio Calabrese" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Giulio
+:Giulio rdf:type owl:NamedIndividual ;
+        :ascolta :I_wanna_be_your_slave ;
+        :partecipa :salmo_concerto ;
+        :età 16 ;
+        :nome "Giulio" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Google_Play_Music
+:Google_Play_Music rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#I_wanna_be_your_slave
+:I_wanna_be_your_slave rdf:type owl:NamedIndividual ;
+                       :scrittoTesto :Damiano_David ;
+                       :è_cantato :Maneskin ;
+                       :Numero_ascolti 220000 ;
+                       :minutaggio 2.53 ;
+                       :nome "I wanna be your slave" ;
+                       :tristezza "annoiato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Il_ballo_della_vita
+:Il_ballo_della_vita rdf:type owl:NamedIndividual ;
+                     <http://www.ontologydesignpatterns.org/cp/owl/bag.owl#hasItem> :New_Song ,
+                                                                                    :Torna_a_casa ;
+                     :album_contiene :New_Song ,
+                                     :Torna_a_casa ,
+                                     :beggin ,
+                                     :l_altra_dimensione ;
+                     :incasso_album 250500 ;
+                     :nome "il_ballo_della_vita" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ilaria
+:Ilaria rdf:type owl:NamedIndividual ;
+        :ascolta :invece_no ;
+        :età 25 ;
+        :nome "Ilaria" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Inno_alla_gioia
+:Inno_alla_gioia rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#La_Mer
+:La_Mer rdf:type owl:NamedIndividual ;
+        :è_scritto :Debussy .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Ludwig_van_Beethoven
+:Ludwig_van_Beethoven rdf:type owl:NamedIndividual ;
+                      :scrive :Inno_alla_gioia ;
+                      :nome "Ludwig_van_Beethoven" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#MTV_Music
+:MTV_Music rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Maneskin
+:Maneskin rdf:type owl:NamedIndividual ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :è_residente ;
+                     owl:someValuesFrom :roma
+                   ] ;
+          :nome "Maneskin" ;
+          rdfs:seeAlso "https://dbpedia.org/page/Maneskin" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Maracas
+:Maracas rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Marco
+:Marco rdf:type owl:NamedIndividual ;
+       :partecipa :salmo_concerto ;
+       :età 15 .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Mediaword
+:Mediaword rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Montecarlo
+:Montecarlo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#New_Song
+:New_Song rdf:type owl:NamedIndividual ;
+          <http://www.ontologydesignpatterns.org/cp/owl/sequence.owl#precedes> :Torna_a_casa ;
+          :contieneTesto :Damiano_David ;
+          :è_cantato :Maneskin ;
+          :felicita "soddisfatto" ;
+          :minutaggio 3.33 ;
+          :nome "New song" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Organo
+:Organo rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pearl_jem
+:Pearl_jem rdf:type owl:NamedIndividual ;
+           :videoclip_di :even_flow ;
+           :nome "Pearl Jem" ;
+           rdfs:seeAlso "https://dbpedia.org/page/Pearl_Jem" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pianoforte
+:Pianoforte rdf:type owl:NamedIndividual ;
+            :è_uno_strumento_presente :benvenuto .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Pianola
+:Pianola rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Placebo
+:Placebo rdf:type owl:NamedIndividual ;
+         :nome "Placebo" ;
+         rdfs:seeAlso "https://dbpedia.org/page/Placebo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RAPETTI_MOGOL_ALFREDO
+:RAPETTI_MOGOL_ALFREDO rdf:type owl:NamedIndividual ;
+                       :nome "Rapetti Mogol Alfredo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RTL
+:RTL rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio24
+:Radio24 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_105
+:Radio_105 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_Italia
+:Radio_Italia rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_Zeta
+:Radio_Zeta rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Radio_deejay
+:Radio_deejay rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#RaiPlay_Sound
+:RaiPlay_Sound rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Salvatore
+:Salvatore rdf:type owl:NamedIndividual ;
+           :ascolta :il_mondo_che_vorrei ,
+                    :lunedi ;
+           :età 16 .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Spinetta
+:Spinetta rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Spotify
+:Spotify rdf:type owl:NamedIndividual ;
+         :pubblicano :Addio ,
+                     :I_wanna_be_your_slave ,
+                     :aerials ,
+                     :alive ,
+                     :antipatico ,
+                     :beggin ,
+                     :benvenuto ,
+                     :black ,
+                     :do_i_wanna_know ,
+                     :even_flow ,
+                     :hypnotize ,
+                     :i_wanna_be_yours ,
+                     :il_mondo_che_vorrei ,
+                     :incancellabile ,
+                     :invece_no ,
+                     :jeremy ,
+                     :kumite ,
+                     :l_altra_dimensione ,
+                     :last_kiss ,
+                     :lunedi ,
+                     <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984> ,
+                     <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505> ,
+                     <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti> .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#System_of_a_down
+:System_of_a_down rdf:type owl:NamedIndividual ;
+                  :scriveTesto :byob ;
+                  :nome "System of a down" ;
+                  rdfs:seeAlso "https://dbpedia.org/page/System_of_a_down" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Tamburelli
+:Tamburelli rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Tastiera
+:Tastiera rdf:type owl:NamedIndividual ;
+          :è_uno_strumento_presente :Torna_a_casa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Torna_a_casa
+:Torna_a_casa rdf:type owl:NamedIndividual ;
+              :scrittoTesto :Damiano_David ;
+              :sono_pubblicati :Spotify ;
+              :è_cantato :Maneskin ;
+              :Numero_ascolti 251000 ;
+              :minutaggio 3.15 ;
+              :nome "Torna a casa" ;
+              :paura "ansioso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Torna_a_casa_videoclip
+:Torna_a_casa_videoclip rdf:type owl:NamedIndividual ;
+                        :videoclip_di :Torna_a_casa .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Trony
+:Trony rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Unieuro
+:Unieuro rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Vasco_Rossi
+:Vasco_Rossi rdf:type owl:NamedIndividual ;
+             :scriveTesto :il_mondo_che_vorrei ;
+             :nome "Vasco Rossi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Victoria_De_Angelis
+:Victoria_De_Angelis rdf:type owl:NamedIndividual ;
+                     :nome "Victoria De Angelis" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Viola
+:Viola rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Violino
+:Violino rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Violoncello
+:Violoncello rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Virgin
+:Virgin rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Vito
+:Vito rdf:type owl:NamedIndividual ;
+      :ascolta :lunedi .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#Youtube
+:Youtube rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#addio_videoclip
+:addio_videoclip rdf:type owl:NamedIndividual ;
+                 :videoclip_di :Addio .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#aerials
+:aerials rdf:type owl:NamedIndividual ;
+         :è_cantato :System_of_a_down ;
+         :minutaggio 3.53 ;
+         :nome "aerials" ;
+         :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#aerials_videoclip
+:aerials_videoclip rdf:type owl:NamedIndividual ;
+                   :videoclip_di :aerials .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#alcatraz
+:alcatraz rdf:type owl:NamedIndividual ,
+                   :milano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#alive
+:alive rdf:type owl:NamedIndividual ;
+       :è_cantato :Pearl_jem ;
+       :minutaggio 5.41 ;
+       :nome "Alive" ;
+       :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#am
+:am rdf:type owl:NamedIndividual ;
+    :album_contiene :do_i_wanna_know ,
+                    :i_wanna_be_yours ,
+                    :r_u_mine ;
+    :incasso_album 55000 ;
+    :nome "am" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#andrea
+:andrea rdf:type owl:NamedIndividual ;
+        :partecipa :salmo_concerto ;
+        :età 35 ;
+        :nome "andrea" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#antipatico
+:antipatico rdf:type owl:NamedIndividual ;
+            :è_cantato :salmo ;
+            :Numero_ascolti 100000000 ;
+            :disgusto "deluso" ;
+            :minutaggio 1.57 ;
+            :nome "Antipatico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#antipatico_videoclip
+:antipatico_videoclip rdf:type owl:NamedIndividual ;
+                      :videoclip_di :antipatico .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#arena_di_verona
+:arena_di_verona rdf:type owl:NamedIndividual ,
+                          :verona .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#artic_monkeys_concerto
+:artic_monkeys_concerto rdf:type owl:NamedIndividual ;
+                        :si_svolge :san_siro ;
+                        :Numero_di_spettatori 18500 ;
+                        :incasso 555000 ;
+                        :nome "artic monkeys concerto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#batteria
+:batteria rdf:type owl:NamedIndividual ;
+          :è_uno_strumento_presente :lunedi .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#beggin
+:beggin rdf:type owl:NamedIndividual ;
+        :è_cantato :Maneskin ;
+        :minutaggio 3.31 ;
+        :nome "Beggin" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#beggin_videoclip
+:beggin_videoclip rdf:type owl:NamedIndividual ;
+                  :videoclip_di :beggin .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#benvenuto
+:benvenuto rdf:type owl:NamedIndividual ;
+           :appartiene :latino ,
+                       :pop ;
+           :è_cantato :lauraPausini ;
+           :felicita "soddisfatto" ;
+           :minutaggio 3.54 ;
+           :nome "benvenuto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#benvenuto_videoclip
+:benvenuto_videoclip rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#black
+:black rdf:type owl:NamedIndividual ;
+       :è_cantato :Pearl_jem ;
+       :minutaggio 5.43 ;
+       :nome "Black" ;
+       :sorpresa "confuso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#black_market_music
+:black_market_music rdf:type owl:NamedIndividual ;
+                    :album_contiene :special_k ;
+                    :incasso_album 53000 ;
+                    :nome "black_market_music" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#blues
+:blues rdf:type owl:NamedIndividual ;
+       :è_appartenuto :lunedi ;
+       :disgusto "deluso" ;
+       :nome "Blues" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#byob
+:byob rdf:type owl:NamedIndividual ;
+      :è_cantato :System_of_a_down ;
+      :Numero_ascolti 25600 ;
+      :minutaggio 4.15 ;
+      :nome "Byob" ;
+      :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#casalecchio_di_reno
+:casalecchio_di_reno rdf:type owl:NamedIndividual ,
+                              :bologna .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#chitarra_elettrica
+:chitarra_elettrica rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#chop_suey
+:chop_suey rdf:type owl:NamedIndividual ;
+           :è_cantato :System_of_a_down ;
+           :Numero_ascolti 55500 ;
+           :minutaggio 3.30 ;
+           :nome "Chop Suey" ;
+           :tristezza "annoiato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#clarinetto
+:clarinetto rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#corno
+:corno rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#do_i_wanna_know
+:do_i_wanna_know rdf:type owl:NamedIndividual ;
+                 :è_cantato :Artic_Monkeys ;
+                 :minutaggio 4.32 ;
+                 :nome "Do i wanna know" ;
+                 :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#estragon
+:estragon rdf:type owl:NamedIndividual ,
+                   :bologna .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#even_flow
+:even_flow rdf:type owl:NamedIndividual ;
+           :scrittoTesto :Eddie_Vedder ;
+           :è_cantato :Pearl_jem ;
+           :disgusto "deluso" ;
+           :minutaggio 4.53 ;
+           :nome "Even flow" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#even_flow_videoclip
+:even_flow_videoclip rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#favourite_worst_nightmare
+:favourite_worst_nightmare rdf:type owl:NamedIndividual ;
+                           :album_contiene <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505> ;
+                           :incasso_album 28000 ;
+                           :nome "favourite_worst_nightmare" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#federico_fellini
+:federico_fellini rdf:type owl:NamedIndividual ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :è_residente ;
+                             owl:someValuesFrom :verona
+                           ] ;
+                  :dirige :addio_videoclip ;
+                  :età 34 ;
+                  :nome "federico fellini" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#flauto
+:flauto rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#flauto_traverso
+:flauto_traverso rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#flop
+:flop rdf:type owl:NamedIndividual ;
+      :album_contiene :antipatico ,
+                      :kumite ,
+                      <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984> ;
+      :incasso_album 50010 ;
+      :nome "flop" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#forum_Assago
+:forum_Assago rdf:type owl:NamedIndividual ,
+                       :milano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#gran_padano_arena
+:gran_padano_arena rdf:type owl:NamedIndividual ,
+                            :verona .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#hypnotize
+:hypnotize rdf:type owl:NamedIndividual ;
+           :scrittoTesto :Al_Lewis ;
+           :è_cantato :System_of_a_down ;
+           :felicita "soddisfatto" ;
+           :minutaggio 3.09 ;
+           :nome "Hypnotize" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#hypnotize_album
+:hypnotize_album rdf:type owl:NamedIndividual ;
+                 :album_contiene :hypnotize ,
+                                 :lonely_day ;
+                 :incasso_album 25120 .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#i_wanna_be_yours
+:i_wanna_be_yours rdf:type owl:NamedIndividual ;
+                  :scrittoTesto :Artic_Monkeys ;
+                  :è_cantato :Artic_Monkeys ;
+                  :felicita "soddisfatto" ;
+                  :minutaggio 3.03 ;
+                  :nome "i wanna be yours" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#il_mondo_che_vorrei
+:il_mondo_che_vorrei rdf:type owl:NamedIndividual ;
+                     :è_cantato :lauraPausini ;
+                     :minutaggio 4.13 ;
+                     :nome "Il mondo che vorrei" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#incancellabile
+:incancellabile rdf:type owl:NamedIndividual ;
+                :scrittoTesto :RAPETTI_MOGOL_ALFREDO ;
+                :è_cantato :lauraPausini ;
+                :felicita "soddisfatto" ;
+                :minutaggio 3.47 ;
+                :nome "Incancellabile" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#invece_no
+:invece_no rdf:type owl:NamedIndividual ;
+           :scrittoTesto :Giorgio_Calabrese ;
+           :è_cantato :lauraPausini ;
+           :è_uno_strumento_presente :Basso_elettrico ;
+           :minutaggio 3.56 ;
+           :nome "Invece no" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ippodromo_snai
+:ippodromo_snai rdf:type owl:NamedIndividual ,
+                         :milano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#jazz
+:jazz rdf:type owl:NamedIndividual ;
+      :è_appartenuto :lunedi ;
+      :felicita "divertito" ;
+      :nome "Jazz" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#jeremy
+:jeremy rdf:type owl:NamedIndividual ;
+        :è_cantato :Pearl_jem ;
+        :felicita "soddisfatto" ;
+        :minutaggio 5.18 ;
+        :nome "Jeremy" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#kioene_arena
+:kioene_arena rdf:type owl:NamedIndividual ,
+                       :padova .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#kumite
+:kumite rdf:type owl:NamedIndividual ;
+        :è_cantato :salmo ;
+        :Numero_ascolti 213000 ;
+        :minutaggio 2.50 ;
+        :nome "Kumite" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#l_altra_dimensione
+:l_altra_dimensione rdf:type owl:NamedIndividual ;
+                    :appartiene :rock ;
+                    :è_cantato :Maneskin ;
+                    :Numero_ascolti 55000 ;
+                    :minutaggio 2.06 ;
+                    :nome "L'altra dimensione" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#last_kiss
+:last_kiss rdf:type owl:NamedIndividual ;
+           :è_cantato :Pearl_jem ;
+           :minutaggio 3.15 ;
+           :nome "Last kiss" ;
+           :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#last_kiss_album
+:last_kiss_album rdf:type owl:NamedIndividual ;
+                 :album_contiene :last_kiss ;
+                 :nome "last_kiss" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#latino
+:latino rdf:type owl:NamedIndividual ;
+        :nome "Latino" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#lauraPausini
+:lauraPausini rdf:type owl:NamedIndividual ;
+              :nome "Laura pausini" ;
+              rdfs:seeAlso "https://dbpedia.org/page/Laura_Pausini" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#laura_pausini_concerto
+:laura_pausini_concerto rdf:type owl:NamedIndividual ;
+                        :si_svolge :estragon ;
+                        :Numero_di_spettatori 1500 ;
+                        :incasso 45000 ;
+                        :nome "Concerto di Laura Pausini" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#le_cose_che_vivi
+:le_cose_che_vivi rdf:type owl:NamedIndividual ;
+                  :album_contiene :il_mondo_che_vorrei ,
+                                  :incancellabile ,
+                                  :mi_dispiace ;
+                  :incasso_album 352000 ;
+                  :nome "le_cose_che_vivi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#lonely_day
+:lonely_day rdf:type owl:NamedIndividual ;
+            :è_cantato :System_of_a_down ;
+            :minutaggio 3.55 ;
+            :nome "Lonely day" ;
+            :tristezza "annoiato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#lunedi
+:lunedi rdf:type owl:NamedIndividual ;
+        :sono_pubblicati :Euronics ;
+        :è_cantato :salmo ;
+        :minutaggio 3.15 ;
+        :nome "Lunedì" ;
+        :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#lunedi_videoclip
+:lunedi_videoclip rdf:type owl:NamedIndividual ;
+                  :videoclip_di :lunedi .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#maineskin_concerto
+:maineskin_concerto rdf:type owl:NamedIndividual ;
+                    :si_svolge :palaflorio ;
+                    :Numero_di_spettatori 6000 ;
+                    :incasso 180000 ;
+                    :nome "Maneskin concerto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#marco_non_ce
+:marco_non_ce rdf:type owl:NamedIndividual ;
+              :appartiene :pop ,
+                          :rock ;
+              :è_cantato :lauraPausini ;
+              :Numero_ascolti 34 ;
+              :minutaggio 3.47 ;
+              :nome "Marco non c'è" ;
+              :paura "respinto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#marco_non_ce_videoclip
+:marco_non_ce_videoclip rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#mardy_bum
+:mardy_bum rdf:type owl:NamedIndividual ;
+           :è_cantato :Artic_Monkeys ;
+           :minutaggio 2.55 ;
+           :nome "Mardy bum" ;
+           :sorpresa "confuso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#meds
+:meds rdf:type owl:NamedIndividual ;
+      :è_cantato :Placebo ;
+      :minutaggio 2.53 ;
+      :nome "Meds" ;
+      :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#meds_album
+:meds_album rdf:type owl:NamedIndividual ;
+            :album_contiene :meds ,
+                            :song_to_say_goodbye ;
+            :incasso_album 15020 ;
+            :nome "meds" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#meds_videoclip
+:meds_videoclip rdf:type owl:NamedIndividual ;
+                :videoclip_di :meds .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#mezmerize
+:mezmerize rdf:type owl:NamedIndividual ;
+           :album_contiene :byob ;
+           :incasso_album 25300 ;
+           :nome "mezmerize" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#mi_dispiace
+:mi_dispiace rdf:type owl:NamedIndividual ;
+             :è_cantato :lauraPausini ;
+             :minutaggio 3.50 ;
+             :nome "Mi dispiace" ;
+             :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#mi_dispiace_videoclip
+:mi_dispiace_videoclip rdf:type owl:NamedIndividual ;
+                       :videoclip_di :mi_dispiace .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#modigliani_forum
+:modigliani_forum rdf:type owl:NamedIndividual ,
+                           :livorno .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#musica_classica
+:musica_classica rdf:type owl:NamedIndividual ;
+                 :felicita "divertito" ;
+                 :nome "Musica classica" ;
+                 :tristezza "annoiato" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ottavino
+:ottavino rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pala_alpitour
+:pala_alpitour rdf:type owl:NamedIndividual ,
+                        :torino .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#palaflorio
+:palaflorio rdf:type owl:NamedIndividual ,
+                     :bari .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#palazzetto_dello_sport
+:palazzetto_dello_sport rdf:type owl:NamedIndividual ,
+                                 :roma .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pearl_jam_concerto
+:pearl_jam_concerto rdf:type owl:NamedIndividual ;
+                    :si_svolge :ippodromo_snai ;
+                    :Numero_di_spettatori 20000 ;
+                    :incasso 600000 ;
+                    :nome "pearl jam concerto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#perdonami
+:perdonami rdf:type owl:NamedIndividual ;
+           :è_cantato :salmo ;
+           :Numero_ascolti 300150 ;
+           :minutaggio 2.14 ;
+           :nome "Perdonami" ;
+           :paura "ansioso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#perdonami_videoclip
+:perdonami_videoclip rdf:type owl:NamedIndividual ;
+                     :videoclip_di :perdonami .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#placebo_concerto
+:placebo_concerto rdf:type owl:NamedIndividual ;
+                  :si_svolge :san_siro ;
+                  :Numero_di_spettatori 80000 ;
+                  :incasso 2450000 ;
+                  :nome "Placebo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#playlist
+:playlist rdf:type owl:NamedIndividual ;
+          :album_contiene :lunedi ,
+                          :perdonami ,
+                          <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti> ;
+          :incasso_album 255000 ;
+          :nome "playlist" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#pop
+:pop rdf:type owl:NamedIndividual ;
+     :nome "Pop" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#primavera_in_anticipo
+:primavera_in_anticipo rdf:type owl:NamedIndividual ;
+                       :album_contiene :invece_no ;
+                       :incasso_album 353000 ;
+                       :nome "primavera_in_anticipo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#r_u_mine
+:r_u_mine rdf:type owl:NamedIndividual ;
+          :è_cantato :Artic_Monkeys ;
+          :minutaggio 3.22 ;
+          :nome "r u mine" ;
+          :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#rap
+:rap rdf:type owl:NamedIndividual ;
+     :è_appartenuto :lunedi ;
+     :felicita "estasiato" ;
+     :nome "Rap" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#resta_in_ascoto
+:resta_in_ascoto rdf:type owl:NamedIndividual ;
+                 :album_contiene :Addio ,
+                                 :benvenuto ,
+                                 :marco_non_ce ,
+                                 :vivimi ;
+                 :incasso_album 410000 ;
+                 :nome "resta_in_ascolto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#rock
+:rock rdf:type owl:NamedIndividual ;
+      :è_appartenuto :lunedi ;
+      :felicita "estasiato" ;
+      :nome "Rock" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#salmo
+:salmo rdf:type owl:NamedIndividual ;
+       :nome "Salmo" ;
+       rdfs:seeAlso "https://dbpedia.org/page/Salmo" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#salmo_concerto
+:salmo_concerto rdf:type owl:NamedIndividual ;
+                :si_svolge :modigliani_forum ;
+                :Numero_di_spettatori 8033 ;
+                :incasso 240900 ;
+                :nome "Salmo concerto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#san_siro
+:san_siro rdf:type owl:NamedIndividual ,
+                   :milano .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sassofono
+:sassofono rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#sleeping_with_ghosts
+:sleeping_with_ghosts rdf:type owl:NamedIndividual ;
+                      :album_contiene :special_needs ,
+                                      :the_bitter_end ;
+                      :nome "sleeping_with_ghosts" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#song_to_say_goodbye
+:song_to_say_goodbye rdf:type owl:NamedIndividual ;
+                     :è_cantato :Placebo ;
+                     :minutaggio 3.36 ;
+                     :nome "Song to say goodbye" ;
+                     :sorpresa "energico" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#special_k
+:special_k rdf:type owl:NamedIndividual ;
+           :è_cantato :Placebo ;
+           :felicita "soddisfatto" ;
+           :minutaggio 3.52 ;
+           :nome "Special k" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#special_needs
+:special_needs rdf:type owl:NamedIndividual ;
+               :è_cantato :Placebo ;
+               :minutaggio 5.16 ;
+               :nome "Special needs" ;
+               :sorpresa "confuso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#spike_lee
+:spike_lee rdf:type owl:NamedIndividual ;
+           :dirige :addio_videoclip ;
+           :nome "Spike Lee" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#stadio_olimpico
+:stadio_olimpico rdf:type owl:NamedIndividual ,
+                          :roma .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#system_of_a_down_concerto
+:system_of_a_down_concerto rdf:type owl:NamedIndividual ;
+                           :si_svolge :pala_alpitour ;
+                           :Numero_di_spettatori 18500 ;
+                           :incasso 555000 ;
+                           :nome "system of a down concerto" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#teatro_dell_ira
+:teatro_dell_ira rdf:type owl:NamedIndividual ;
+                 :album_contiene :I_wanna_be_your_slave ,
+                                 :zitti_e_buoni ;
+                 :incasso_album 155000 ;
+                 :nome "teatro_dell_ira" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#ten
+:ten rdf:type owl:NamedIndividual ;
+     :album_contiene :alive ,
+                     :black ,
+                     :even_flow ,
+                     :jeremy ;
+     :nome "ten" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#the_bitter_end
+:the_bitter_end rdf:type owl:NamedIndividual ;
+                :è_cantato :Placebo ;
+                :felicita "soddisfatto" ;
+                :minutaggio 3.11 ;
+                :nome "The bitter end" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#toxicity
+:toxicity rdf:type owl:NamedIndividual ;
+          :è_cantato :System_of_a_down ;
+          :Numero_ascolti 50900 ;
+          :minutaggio 3.38 ;
+          :nome "Toxicity" ;
+          :sorpresa "confuso" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#toxicity_album
+:toxicity_album rdf:type owl:NamedIndividual ;
+                :album_contiene :aerials ,
+                                :chop_suey ,
+                                :toxicity ;
+                :incasso_album 56000 ;
+                :nome "toxicity" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#trombone
+:trombone rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vivimi
+:vivimi rdf:type owl:NamedIndividual ;
+        :appartiene :pop ;
+        :è_cantato :lauraPausini ;
+        :felicita "divertito" ;
+        :minutaggio 3.51 ;
+        :nome "Vivimi" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#vivimi_videoclip
+:vivimi_videoclip rdf:type owl:NamedIndividual ;
+                  :videoclip_di :vivimi .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#what_ever_people_say_I_am
+:what_ever_people_say_I_am rdf:type owl:NamedIndividual ;
+                           :album_contiene :mardy_bum ;
+                           :nome "what_ever_people_say_I_am" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#zitti_e_buoni
+:zitti_e_buoni rdf:type owl:NamedIndividual ;
+               :scrittoTesto :Damiano_David ,
+                             :Victoria_De_Angelis ;
+               :è_cantato :Maneskin ;
+               :Numero_ascolti 355000 ;
+               :minutaggio 3.14 ;
+               :nome "Zitti e buoni" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#zitti_e_buoni_videoclip
+:zitti_e_buoni_videoclip rdf:type owl:NamedIndividual ;
+                         :videoclip_di :zitti_e_buoni .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984> rdf:type owl:NamedIndividual ;
+                                                                                                :è_cantato :salmo ;
+                                                                                                :Numero_ascolti 290000 ;
+                                                                                                :felicita "soddisfatto" ;
+                                                                                                :minutaggio 4.10 ;
+                                                                                                :nome "1984_" ;
+                                                                                                rdfs:comment "è una canzone cantata da Salmo" ;
+                                                                                                rdfs:label 1984 .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984_videoclip
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984_videoclip> rdf:type owl:NamedIndividual ;
+                                                                                                          :videoclip_di <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#1984> ;
+                                                                                                          rdfs:comment "è un videoclip di 1984 cantato da Salmo" ;
+                                                                                                          rdfs:label "1984_videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505> rdf:type owl:NamedIndividual ;
+                                                                                               :è_cantato :Artic_Monkeys ;
+                                                                                               :felicita "divertito" ;
+                                                                                               :minutaggio 3.50 ;
+                                                                                               :nome "505_" ;
+                                                                                               rdfs:comment "è una canzone cantata da Artic_Monkeys" ;
+                                                                                               rdfs:label 505 .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505_videoclip
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505_videoclip> rdf:type owl:NamedIndividual ;
+                                                                                                         :videoclip_di <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#505> ;
+                                                                                                         rdfs:comment "è un videoclip della canzone 505 cantata da Artic_Monkeys" ;
+                                                                                                         rdfs:label "505_videoclip" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti> rdf:type owl:NamedIndividual ;
+                                                                                                     :Numero_ascolti 450000 ;
+                                                                                                     :minutaggio 3.52 ;
+                                                                                                     rdfs:comment "è un album di Salmo" ;
+                                                                                                     rdfs:label "90_minuti" .
+
+
+###  http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti_vieoclip
+<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti_vieoclip> rdf:type owl:NamedIndividual ;
+                                                                                                              :videoclip_di <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#90_minuti> ;
+                                                                                                              rdfs:comment "è un album di Salmo" ;
+                                                                                                              rdfs:label "90_minuti_videoclip" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Addio
+                        :benvenuto
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Cristina
+                        :Giulio
+                        :Ilaria
+                        :Marco
+                        :Salvatore
+                        :andrea
+                        :salmo_concerto
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Giulio
+                        :Marco
+                        :andrea
+                        :lauraPausini
+                        :salmo
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:a rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:n rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:v rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Se un artista scrive un testo allora è un paroliere" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Artista ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :scrittoTesto ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Paroliere ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Tutti i brani vengono pubblicati su Amazon_music" ;
+   rdfs:label "S8" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sono_pubblicati ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Amazon_Music
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Tutti i brani sono pubblicati da MTV Music" ;
+   rdfs:label "S7" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sono_pubblicati ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :MTV_Music
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S0" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sono_pubblicati ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Spotify
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Tutti i brani che hanno la certificazione oro allora sono molto popolari" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :oro ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MostPopular ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Per vincere la certificazione vevo bisogna avere almeno 100000000" ;
+   rdfs:label "S9" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :Numero_ascolti ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :n
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first :n ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 100000000 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :vevo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Tutti i brani che sono pubblicati da Spotify vengono pubblicati da Youtube" ;
+   rdfs:label "S6" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sono_pubblicati ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Spotify
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Brano ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sono_pubblicati ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Youtube
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "In tutte le musiche latine è presente un violino" ;
+   rdfs:label "S5" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :appartiene ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :latino
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :è_uno_strumento_presente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :Violino ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Se un brano appartiene alla musica classica allora è presente lo strumento pianoforte" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :appartiene ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :musica_classica
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :è_uno_strumento_presente ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :Pianoforte ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "se un brano ha un videoclip allora il cantante del brano ha un ruolo di attore" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :canta ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :ha_videoclip ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :v
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :attore ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
