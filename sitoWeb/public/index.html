@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="%= BASE_URL %>favicon.ico">
+    <link rel="png" href="%= BASE_URL %>user2.png">
+    <title>Musica ed Emozioni</title>
+   
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.2/dist/vue.global.js"></script>
+    <link rel="stylesheet"  href="progettoModSem.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="progetto ModSem.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+  </head>
+
+    <body>
+     <div id="app"></div>
+    <!-- built files will be auto injected -->
+    
+    <div class="risultato" id="risultato"><center>
+        <h1 id="titolo">benvenuti all'interno dell'ontologia Musica</h1><h3 id="paragrafo">utilizza la navbar per navigare all'interno di essa</h3><br></center>
+        <div class="contenuto" id="contenuto"><h2></h2></div>
+    </div>
+
+      <div class="Musica" id="Musica">
+        <button class="buttonTopVertical" onclick="generiMusicali()">Generi musicali</button>
+        <button class="buttonTopVertical" onclick="artisti()">Artisti</button>
+        <button class="buttonTopVertical" onclick="album()">Album</button>
+        <button class="buttonTopVertical" onclick="news()">News</button>
+      </div>
+
+      <div class="Brani" id="Brani">
+        <button class="buttonTopVertical" onclick="tuttiBrani()">Tutti i Brani</button>
+        <button class="buttonTopVertical" onclick="piuAscoltati()"> più ascoltati</button>
+        <button class="buttonTopVertical" onclick="menoAscoltati()">meno ascoltati</button>
+        <button class="buttonTopVertical" onclick="felicita()">brani felici</button>
+      </div>
+    
+      <div class="Classifiche" id="Classifiche">
+        <button class="buttonTopVertical" onclick="oro()">Oro</button>
+        <button class="buttonTopVertical" onclick="platino()">Platino</button>
+        <button class="buttonTopVertical" onclick="doppioPlatino()">Doppio Platino</button>
+        <button class="buttonTopVertical" onclick="triploPlatino()">Triplo Platino</button>
+        <button class="buttonTopVertical" onclick="quadruploPlatino()">Quadruplo Platino</button>
+      </div>
+
+      <div class="About" id="About">
+        <center>
+        <img src="user.png" height="100px" width="100px"><br>
+        nome: Vito
+        cognome: Ruggiero<br>
+        email: ruggierovito95@gmail.com<br><br>
+        
+        <img src="user2.png" height="100px" width="100px"><br>
+        nome: Ilaria
+        cognome: Figliuzzi<br>
+        email: ilariafigliuzzi@gmail.com<br>
+        </center>
+      </div>
+  
+  <div class="musica">
+    <button class="buttonMusicOntology" onclick="window.location.reload();">Music Ontology</button>
+    <button class="buttonTopBar" onclick="Musica()">Musica</button>
+    <button class="buttonTopBar" onclick="Brani()">Brani</button>
+    <button class="buttonTopBar" onclick="Classifiche()">Classifiche</button>
+    <button class="buttonTopBar" onclick="About()">Chi siamo</button>
+  </div>
+
+ 
+
+
+
+  </body>
+</html>
+
+
+<script>
+// Le funzioni Musica,brani,classifiche ed album permettono di far comparire a scomparsa altri sotto menu
+function Musica(){
+    let Musica=document.getElementById("Musica");
+    let Brani=document.getElementById("Brani");
+    let Classifiche=document.getElementById("Classifiche");
+    let About=document.getElementById("About");
+    Brani.style.top="-200px";
+    Classifiche.style.top="-210px";
+    About.style.left="-500px";
+    if(Musica.style.top=="50px"){
+        Musica.style.top="-210px";
+    }else{
+        Musica.style.top="50px";
+    }
+
+}
+function Brani(){
+  let Brani=document.getElementById("Brani");
+    let Musica=document.getElementById("Musica");
+    let Classifiche=document.getElementById("Classifiche");
+    let About=document.getElementById("About");
+    Musica.style.top="-210px";
+    Classifiche.style.top="-210px";
+    About.style.left="-500px";
+    if(Brani.style.top=="50px"){
+        Brani.style.top="-200px";
+    }else{
+        Brani.style.top="50px";
+    }
+
+}
+function Classifiche(){
+  let Classifiche=document.getElementById("Classifiche");
+    let Brani=document.getElementById("Brani");
+    let Musica=document.getElementById("Musica");
+    let About=document.getElementById("About");
+    Musica.style.top="-210px";
+    Brani.style.top="-200px";
+    About.style.left="-500px";
+    if(Classifiche.style.top=="50px"){
+        Classifiche.style.top="-210px";
+    }else{
+        Classifiche.style.top="50px";
+    }
+}
+function About(){
+  let Classifiche=document.getElementById("Classifiche");
+  let Brani=document.getElementById("Brani");
+  let Musica=document.getElementById("Musica");
+  let About=document.getElementById("About");
+  Musica.style.top="-210px";
+  Brani.style.top="-200px";
+  Classifiche.style.top="-210px";
+    if(About.style.left=="500px"){
+        About.style.left="-500px";
+    }else{
+        About.style.left="500px";
+    }
+    
+}
+///////////////////////////////////////////////////////////SEZIONE MUSICA/////////////////////////////////////////////
+// All'interno della sezione musica vi è un sottomenu formato dai tasti generi musicali, artisti, album ed News. Al click di ognuno di questi viene richiamata la funzione sottostante
+function generiMusicali(){
+  let Musica=document.getElementById("Musica");
+  Musica.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti tutti i generi musicali presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  //document.getElementById("contenuto").innerText=result;
+  queryGeneriMusicali();
+}
+function queryGeneriMusicali(){
+ $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+PREFIX : <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+PREFIX musica:<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+Select ?nomeGenere
+Where{ ?insta a musicaEdEmozioni:Genere_musicale.
+    ?insta musicaEdEmozioni:nome ?nomeGenere.
+    
+}`
+
+}, success: function (result) {
+  console.log(result);
+  document.getElementById("contenuto").innerText=result;
+  }             
+ });
+}
+function artisti(){
+  let Musica=document.getElementById("Musica");
+  Musica.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti tutti gli artisti presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  queryArtisti();
+}
+function queryArtisti(){
+ $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+          SELECT ?nome 
+          WHERE { 
+                ?inst a musicaEdEmozioni:Artista. 
+                ?inst musicaEdEmozioni:nome ?nome .
+}`
+
+}, success: function (result) {
+  console.log(result);
+  document.getElementById("contenuto").innerText=result;
+  }             
+ });
+}
+
+function album(){
+  let Musica=document.getElementById("Musica");
+  Musica.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti tutti gli album presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  queryAlbum();
+}
+function queryAlbum(){
+ $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+PREFIX : <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+PREFIX musica:<http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+Select ?nomeAlbum
+Where{ ?insta a musicaEdEmozioni:album.
+    ?insta musicaEdEmozioni:nome ?nomeAlbum.
+    
+}`
+
+}, success: function (result) {
+  console.log(result);
+  document.getElementById("contenuto").innerText=result;
+  }             
+ });
+}
+
+function news(){
+  let Musica=document.getElementById("Musica");
+  Musica.style.top="-210px";
+  document.getElementById("titolo").innerText="qui ci saranno le news piu importanti ";
+  document.getElementById("contenuto").innerHTML="<li>Annunciate le nuove date del concert di salmo:<br>   -01/03 Palazzetto dello sport (Roma)<br>-06/03 Palaflorio(Bari)<br>-15/03 Mediolanum Forum(Milano) </li><br>"+
+  "<li> Nessun concerto annunciato dai System of Down</li><br>"+
+  "<li> Arctic monkeys non scelgono l'Italia per il loro prossimo tour </li><br>";
+  document.getElementById("paragrafo").innerText="";
+}
+///////////////////////////////////////////////////////////SEZIONE BRANI/////////////////////////////////////////////
+// All'interno della sezione musica vi è un sottomenu formato dai tasti tutti i brani, più ascoltati , menu ascoltati e felicità. Al click di ognuno di questi viene richiamata la funzione sottostante
+
+function tuttiBrani(){
+  let Brani=document.getElementById("Brani");
+  Brani.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti tutti i brani presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  querytuttiBrani();
+}
+function querytuttiBrani(){
+ $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+          SELECT ?brano 
+          WHERE { 
+            ?inst a musicaEdEmozioni:Brano. 
+            ?inst musicaEdEmozioni:nome ?brano .}`
+
+}, success: function (result) {
+  console.log(result);
+  
+    //document.getElementById("contenuto").innerText=result;
+    document.getElementById("contenuto").innerText=result;
+  }
+  
+  //document.getElementById("contenuto").innerText=result;
+    //document.getElementById("paragrafo").innerHTML="<table border=9><tr><td>"+result+"</td></tr></table>";
+    
+   
+           
+ });
+}
+
+function piuAscoltati(){
+  let Brani=document.getElementById("Brani");
+  Brani.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti brani piu ascoltati presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  queryBpiuascoltati();
+}
+function queryBpiuascoltati(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+          SELECT ?nomeBrano ?numero_ascolti
+          WHERE { 
+              ?inst a musicaEdEmozioni:Brano. 
+              ?inst musicaEdEmozioni:nome ?nomeBrano. 
+              ?inst musicaEdEmozioni:Numero_ascolti ?numero_ascolti.
+    }
+order by desc(?numero_ascolti) 
+LIMIT 7`
+
+}, success: function (result) {
+  document.getElementById("contenuto").innerText=result;
+  }            
+ });
+}
+
+function menoAscoltati(){
+  let Brani=document.getElementById("Brani");
+  Brani.style.top="-210px";
+  document.getElementById("titolo").innerText="eccoti brani meno ascoltati presenti nell'ontologia";
+  document.getElementById("paragrafo").innerText="";
+  queryBmenoascoltati();
+}
+function queryBmenoascoltati(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeBrano ?numero_ascolti
+WHERE { 
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano. 
+    ?inst musicaEdEmozioni:Numero_ascolti ?numero_ascolti.
+    
+}
+order by asc(?numero_ascolti) 
+LIMIT 7`
+
+}, success: function (result) {
+  document.getElementById("contenuto").innerText=result;
+  }             
+ });
+}
+
+function felicita(){
+  let Brani=document.getElementById("Brani");
+  Brani.style.top="-210px";
+  document.getElementById("titolo").innerText="tutti i brani classificati con l'emozione 'felicita' ";
+  document.getElementById("paragrafo").innerText="";
+  braniFelici();
+}
+function braniFelici(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+SELECT ?nome ?felicità
+WHERE { 
+?inst a musicaEdEmozioni:Brano. 
+?inst musicaEdEmozioni:nome ?nome .
+?inst musicaEdEmozioni:felicita ?felicità .    
+}`
+
+}, success: function (result) {
+  /*for(let i=0; i<result.length; i++){
+    let a=result.split("#");
+  console.log(a[i]+"<br>");*/
+  document.getElementById("contenuto").innerText=result;
+  }
+  //document.getElementById("paragrafo").innerText=result;             
+ });
+}
+
+
+///////////////////////////////////////////////////////////SEZIONE CLASSIFICHE/////////////////////////////////////////////
+// All'interno della sezione musica vi è un sottomenu formato dai tasti classifica album , oro, platino, doppio platino, triplo platino, quadruplo platino. Al click di ognuno di questi viene richiamata la funzione sottostante
+
+function classificaAlbum(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+}
+function classificaEventi(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="Classifiche eventi";
+  document.getElementById("paragrafo").innerText="";
+}
+
+function oro(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+  queryOro();
+}
+function queryOro(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeAlbum ?nomeBrano WHERE { 
+    {
+        SELECT ?nomeAlbum ?incasso 
+        WHERE {        
+    ?inst a musicaEdEmozioni:album. 
+    ?inst musicaEdEmozioni:nome ?nomeAlbum.
+    ?inst musicaEdEmozioni:incasso_album ?incasso.
+            FILTER (?incasso>25000). 
+}
+    }
+    UNION{
+        SELECT ?nomeBrano ?ascolti 
+        WHERE{        
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano.
+    ?inst musicaEdEmozioni:Numero_ascolti ?ascolti.
+             FILTER (?ascolti>50000). 
+    }
+}
+    }
+`
+
+}, success: function (result) {
+  document.getElementById("titolo").innerText="tutti gli album e i brani certificati Oro";
+   document.getElementById("contenuto").innerText=result;
+}
+              
+ });
+}
+
+function platino(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+  queryPlatino();
+}
+function queryPlatino(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeAlbum ?nomeBrano WHERE { 
+    {
+        SELECT ?nomeAlbum ?incasso 
+        WHERE {        
+    ?inst a musicaEdEmozioni:album. 
+    ?inst musicaEdEmozioni:nome ?nomeAlbum.
+    ?inst musicaEdEmozioni:incasso_album ?incasso.
+            FILTER (?incasso>50000). 
+}
+    }
+    UNION{
+        SELECT ?nomeBrano ?ascolti 
+        WHERE{        
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano.
+    ?inst musicaEdEmozioni:Numero_ascolti ?ascolti.
+             FILTER (?ascolti>100000). 
+    }
+}
+    }`
+
+}, success: function (result) {
+  document.getElementById("titolo").innerText="tutti gli album e i brani certificati Platino";
+   document.getElementById("contenuto").innerText=result;
+  }           
+ });
+}
+
+function doppioPlatino(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+  queryDoppioPlatino();
+}
+function queryDoppioPlatino(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeAlbum ?nomeBrano WHERE { 
+    {
+        SELECT ?nomeAlbum ?incasso 
+        WHERE {        
+    ?inst a musicaEdEmozioni:album. 
+    ?inst musicaEdEmozioni:nome ?nomeAlbum.
+    ?inst musicaEdEmozioni:incasso_album ?incasso.
+            FILTER (?incasso>100000). 
+}
+    }
+    UNION{
+        SELECT ?nomeBrano ?ascolti 
+        WHERE{        
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano.
+    ?inst musicaEdEmozioni:Numero_ascolti ?ascolti.
+             FILTER (?ascolti>200000). 
+    }
+}
+    }`
+
+}, success: function (result) {
+  document.getElementById("titolo").innerText="tutti gli album e i brani certificati Doppio Platino";
+   document.getElementById("contenuto").innerText=result;
+  }           
+ });
+}
+
+function triploPlatino(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+  queryTriploPlatino();
+}
+function queryTriploPlatino(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeAlbum ?nomeBrano WHERE { 
+    {
+        SELECT ?nomeAlbum ?incasso 
+        WHERE {        
+    ?inst a musicaEdEmozioni:album. 
+    ?inst musicaEdEmozioni:nome ?nomeAlbum.
+    ?inst musicaEdEmozioni:incasso_album ?incasso.
+            FILTER (?incasso>150000). 
+}
+    }
+    UNION{
+        SELECT ?nomeBrano ?ascolti 
+        WHERE{        
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano.
+    ?inst musicaEdEmozioni:Numero_ascolti ?ascolti.
+             FILTER (?ascolti>300000). 
+    }
+}
+    }`
+
+}, success: function (result) {
+  document.getElementById("titolo").innerText="tutti gli album e i brani certificati Triplo Platino";
+   document.getElementById("contenuto").innerText=result;
+  }           
+ });
+}
+
+function quadruploPlatino(){
+  let Classifiche=document.getElementById("Classifiche");
+  Classifiche.style.top="-210px";
+  document.getElementById("titolo").innerText="classifica album";
+  document.getElementById("paragrafo").innerText="";
+  queryQuadruploPlatino();
+}
+function queryQuadruploPlatino(){
+  $.ajax({
+  url: "http://localhost:7200/repositories/musicaEdEmozioni",     
+  type: "get",
+  dataType: "text",
+  data: {
+  query:`PREFIX musicaEdEmozioni: <http://www.semanticweb.org/user/ontologies/2021/11/untitled-ontology-10/musicaedemozioni#>
+
+
+SELECT ?nomeAlbum ?nomeBrano WHERE { 
+    {
+        SELECT ?nomeAlbum ?incasso 
+        WHERE {        
+    ?inst a musicaEdEmozioni:album. 
+    ?inst musicaEdEmozioni:nome ?nomeAlbum.
+    ?inst musicaEdEmozioni:incasso_album ?incasso.
+            FILTER (?incasso>200000). 
+}
+    }
+    UNION{
+        SELECT ?nomeBrano ?ascolti 
+        WHERE{        
+    ?inst a musicaEdEmozioni:Brano. 
+    ?inst musicaEdEmozioni:nome ?nomeBrano.
+    ?inst musicaEdEmozioni:Numero_ascolti ?ascolti.
+             FILTER (?ascolti>400000). 
+    }
+}
+    }`
+
+}, success: function (result) {
+  document.getElementById("titolo").innerText="tutti gli album e i brani certificati Quadruplo Platino";
+   document.getElementById("contenuto").innerText=result;
+  }            
+ });
+}
+
+</script>
+   
+    
+
+<style>
+  
+.paragrafo{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:cornsilk;
+}
+.musica{
+    transition: all 0.5s;
+    background-color: rgb(27, 27, 27);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.buttonMusicOntology{
+    background: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    height: 50px;
+    width: 200px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    border: none;
+    margin-right: -5px;
+    
+}
+.buttonTopBar{
+    background: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    height: 50px;
+    width: 200px;
+    color: white;
+    text-shadow: 2px 2px 4px cornflowerblue;
+    border: none;
+    margin-right: -5px;
+}
+.risultato{
+  height: 92%;
+  width: 100%;
+  position: absolute;
+  background-color: cornflowerblue;
+  top: 55px;
+ 
+}
+.buttonTopVertical{
+    background: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    transition: all 0.5s;
+    height: 50px;
+    width: 198px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #bd9eee;
+    text-align: start;
+}
+.buttonTopVertical:hover{
+    background: 2px 2px 4px #bd9eee;
+    font-size: large;
+    
+    -webkit-box-shadow: 5px 5px 10px 0px #000000;
+    -moz-box-shadow: 5px 5px 10px 0px #000000;
+    -o-box-shadow: 5px 5px 10px 0px #000000;
+    box-shadow: 5px 5px 10px 0px #bd9eee;
+    transition: all 0.5s; 
+}
+.Musica{
+    padding-top: 5px;
+    transition: all 0.5s;
+    background-color: cornflowerblue;
+    width: 198px;
+    position: absolute;
+    top: -210px;
+    left: 205px;
+}
+.Brani{
+    padding-top: 5px;
+    transition: all 0.5s;
+    background-color: cornflowerblue;
+    width: 198px;
+    position: absolute;
+    left: 410px;
+    top: -200px;
+}
+.Classifiche{
+    padding-top: 5px;
+    transition: all 0.5s;
+    background-color: cornflowerblue;
+    width: 198px;
+    position: absolute;
+    left: 615px;
+    top: -210px;
+}
+.About{
+    transition: all 0.5s;
+    background-color: #272b2f;
+    
+    width: 400px;
+    position: absolute;
+    left: -500px;
+    top: 200px;
+    border-radius: 25px;
+    padding: 20px;
+    color:blanchedalmond;
+    text-shadow: 2px 2px 4px #ffffff;
+    
+}
+#titolo{
+  background-color: cornflowerblue;
+  font-size: 70px;
+  font-style: oblique;
+  
+}
+#paragrafo{
+
+  background-color: cornflowerblue;
+  font-style: oblique;
+  font-weight: normal;
+}
+#contenuto{
+  background-color: cornflowerblue;
+  color: #ffffff;
+  font-size: larger;
+  padding: 25px;
+}
+
+</style>
