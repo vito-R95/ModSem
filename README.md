@@ -16,3 +16,4 @@ III Parte -> utilizzare graphDB come database per il sitoweb
       A questo punto TENENDO APERTO GRAPHDB è stato creato il sitoweb con il software visualStudio.
       Il sito ha estensione Vue e Html,Css e Javascript sono all'interno del file Index.
       Per mandare in esecuzione e vedere il sito, aprire il terminale su visual studio e digitare 'npm run serve'.
+            P.S. -> se il sito non si apre all'indirizzo che appare sul terminale provare con localhost:8080 in Url
